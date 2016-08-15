@@ -3,4 +3,4 @@ packrat/lib*/
 .DS_store
 .Rhistory
 .RData
-./data/field_data_locations_managers_2014.csv
+/data/field_site_locations_managers_2014.csv
