@@ -96,6 +96,12 @@ Source: CRAN
 Version: 0.2.0
 Hash: 3d6e7608e65bbf5cb170dab1e3c9ed8b
 
+Package: lubridate
+Source: CRAN
+Version: 1.5.6
+Hash: f643b126e45fb537ab731a6451d7541f
+Requires: stringr
+
 Package: magrittr
 Source: CRAN
 Version: 1.5
@@ -163,3 +169,9 @@ Source: CRAN
 Version: 0.6.0
 Hash: f57335fdd32a78c1eaf2317f4ed5936e
 Requires: Rcpp, dplyr, lazyeval, magrittr, stringi, tibble
+
+Package: wakefield
+Source: CRAN
+Version: 0.3.0
+Hash: 42b12ffadc2959744741c19877ba0b34
+Requires: chron, dplyr, ggplot2, stringi
