@@ -1,7 +1,7 @@
 Package: GrasslandAllocatr
 Type: Package
 Title: Allocate management actions among a suite grasslands
-Version: 0.0.9001
+Version: 0.0.9002
 Author: person(c("Elise", "Bethany"), "Gould", email = "elisebgould@gmail.com", role = c("aut", "cre"))
 Maintainer: Who to complain to <elisebgould@gmail.com>
 Description: Allocate management actions among a suite of grasslands.
