@@ -33,6 +33,11 @@ Source: CRAN
 Version: 0.1
 Hash: 0afb92b59b02593c70ff8046700ba9d3
 
+Package: brew
+Source: CRAN
+Version: 1.0-6
+Hash: 931f9972deae0f205e1c78a51f33149b
+
 Package: chron
 Source: CRAN
 Version: 2.3-47
@@ -200,6 +205,12 @@ Source: CRAN
 Version: 1.4.1
 Hash: 55a31e20f8a216855e138ca83756a4b0
 Requires: Rcpp, plyr, stringr
+
+Package: roxygen2
+Source: CRAN
+Version: 5.0.1
+Hash: 3569b3fec94a6f24c9467b675d8b33f8
+Requires: Rcpp, brew, digest, stringi, stringr
 
 Package: rprojroot
 Source: CRAN
