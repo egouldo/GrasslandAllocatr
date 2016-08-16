@@ -1,4 +1,4 @@
-transect,quadrat,species,percent_cover
+transect_number,quadrat,species,percent_cover
 1,1,vulpia bromoides,15.0
 1,1,briza minor,15.0
 1,1,aira caryophyllea,0.5
