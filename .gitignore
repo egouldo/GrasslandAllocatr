@@ -5,3 +5,4 @@ packrat/lib*/
 .RData
 /data/field_site_locations_managers_2014.csv
 /packrat/src
+/.remake

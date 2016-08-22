@@ -1,0 +1,11 @@
+packages:
+  GrasslandAllocatr
+
+targets:
+  all:
+    depends: 2014_field_data
+
+  2014_field_data:
+    command: build_raw_dataset(raw_field_data = "./data/field_data_raw_2014.csv",
+                  species_lookup_data = "./data/field_species_lookup_table_2014.csv",
+                  management_lookup_data = "./data/field_site_management_2014.csv")
