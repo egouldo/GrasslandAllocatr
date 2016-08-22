@@ -5,11 +5,9 @@
 #' @param species_lookup_data_path Path to the CSV file containing the species lookup data see \code{\link{lookup_species}}.
 #' @param management_lookup_data_path Path to the CSV file containing the management lookup data, see \code{\link{lookup_management}}.
 #'
-#' @return
-#' @importFrom GrasslandAllocatr lookup_species
-#' @importFrom GrasslandAllocatr lookup_management
+#' @return field_data_by_quadrat This is the complete field dataset in raw form containing both management history for each transect, as well as the type code for each species (i.e. row in the dataset).
 #' @importFrom data.table fread
-#' @import Magrittr
+#' @export
 #'
 build_raw_dataset <- function(raw_field_data_path,species_lookup_data_path,management_lookup_data_path) {
         # Get required datasets
@@ -24,7 +22,7 @@ build_raw_dataset <- function(raw_field_data_path,species_lookup_data_path,manag
                 GrasslandAllocatr::lookup_species(raw_field_data = raw_field_data,
                                                   species_lookup_data = species_lookup_data)
         # lookup management
-       field_data_by_quadrat %<>%
+       field_data_by_quadrat <-
                 GrasslandAllocatr::lookup_management(raw_field_data = field_data_by_quadrat,
                                                      management_lookup_data = management_lookup_data)
         return(field_data_by_quadrat)
