@@ -2,6 +2,8 @@
 #'
 #' @param field_data_by_transect The raw field data with key variables summarised over all quadrats within each transect
 #'
+#' @param year an integer between 0 and 5 representing the \code{GrasslandBBN} time-slice to be parameterised from the field data stored within the case file.
+#'
 #' @return field_data_by_management_unit \code{data_frame} containing all the variables needed for updating the GrasslandBBN with a Netica Case File.
 #' @export
 #' @import dplyr
@@ -45,7 +47,12 @@ generate_case_file_data_frame <- function(field_data_by_transect, year = c(0:5))
                 dplyr::left_join({field_data_by_transect %>%
                         dplyr::select(management_unit,
                                       management,
-                                      years_since)})
+                                      years_since) %>%
+                                dplyr::rename(Management = management, YearsSince = years_since) %>%
+                                tidyr::gather(variable, value, -management_unit) %>%
+                                dplyr::mutate(time = paste0("t", year)) %>%
+                                tidyr::unite(variable, variable, time) %>%
+                                tidyr::spread(variable, value)})
 
         return(field_data_by_management_unit)
 }

@@ -8,6 +8,8 @@ generate_case_file_data_frame(field_data_by_transect, year = c(0:5))
 }
 \arguments{
 \item{field_data_by_transect}{The raw field data with key variables summarised over all quadrats within each transect}
+
+\item{year}{an integer between 0 and 5 representing the \code{GrasslandBBN} time-slice to be parameterised from the field data stored within the case file.}
 }
 \value{
 field_data_by_management_unit \code{data_frame} containing all the variables needed for updating the GrasslandBBN with a Netica Case File.
