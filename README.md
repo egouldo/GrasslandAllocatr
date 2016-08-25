@@ -1,10 +1,24 @@
-# GrasslandAllocatr
+# GrasslandAllocatr: *An R package for allocating a schedule of management actions among a suite of grasslands.*
 
-An R package for allocating a schedule of management actions among a suite of grasslands.
+This package is based on the work of Paul Rees and Elise Gould, in fulfilment of their Master of Science degreees at the School of Botany (now School of BioSciences), University of Melbourne. Please note that this package is still in active development.
+
+The package is built around two models:
+
+1. `GrasslandBBN`: A Bayesian Belief Network model predicting condition for a single grassland in response to management at annual time-steps over a period of 5 years. The original model was built by Paul Rees, and has been parameterised with data collectd by both Paul Rees and Elise Gould.
+2. `GrasslandAllocatr`: A decision model for allocating actions through time among a suite of grasslands. This model uses the predictions of the `GrasslandBBN` and a choice of algorithm and performance metrics for optimally allocating effort under a limited budget. This model is the work of Elise Gould.
+
+# About the data:
+
+Field data for learning the GrasslandBBN parameters is derived from two separate field campaigns, each with two sampling seasons occurring in spring of two consecutive years.
+
+1. 2011 and 2012
+2. 2014 and 2015
+
+Field sampling was undertaken on grasslands of the Victorian Volcanic Plains in the west of Greater Melbourne.
 
 ### A note on data de-identification
 
-Note that field data has been de-identified from both the managing agency and its location in order to protect the location of field sites. Please contact the creator of this repository for further information, should you require identification of each site's location.
+Note that field data has been de-identified from both the managing agency and its location in order to protect the location of field sites. Please contact the creator of this repository for further information, should you require site location details.
 
 - Field data is stored in a main file of the filename format: `field_data_raw_<YEAR>.csv`
 
