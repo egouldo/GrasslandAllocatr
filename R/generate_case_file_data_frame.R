@@ -32,7 +32,7 @@ generate_case_file_data_frame <- function(field_data_by_transect, year = c(0:5))
                                                            "WeedDiversity",
                                                            ifelse(variable == "years_since",
                                                                   "YearsSince", ifelse(
-                                                                  variable = "NF_diversity", "IndigSpp_transect", "Grassland_Condition")))))) %>%
+                                                                  variable == "NF_diversity", "IndigSpp_transect", "Grassland_Condition")))))) %>%
                 dplyr::mutate(time = paste0("t", year)) %>%
                 tidyr::unite(variable, variable, time) %>%
                 tidyr::spread(variable, value)
