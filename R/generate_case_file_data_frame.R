@@ -16,7 +16,8 @@ generate_case_file_data_frame <- function(field_data_by_transect, year = c(0:5))
                 dplyr::summarise(BG_pc = mean(BG_pc),
                                  E_pc = mean(E_pc),
                                  E_diversity = mean(E_diversity),
-                                 NF_diversity = mean(NF_diversity))
+                                 NF_diversity = mean(NF_diversity)) %>%
+                dplyr::mutate(Grassland_Condition = "*")
         # Rename variable names to node names
         year <- ifelse(year == 0, "", as.character(year))
         field_data_by_management_unit %<>%
@@ -30,8 +31,8 @@ generate_case_file_data_frame <- function(field_data_by_transect, year = c(0:5))
                                                                    "E_diversity",
                                                            "WeedDiversity",
                                                            ifelse(variable == "years_since",
-                                                                  "YearsSince",
-                                                                  "IndigSpp_transect"))))) %>%
+                                                                  "YearsSince", ifelse(
+                                                                  variable = "NF_diversity", "IndigSpp_transect", "Grassland_Condition")))))) %>%
                 dplyr::mutate(time = paste0("t", year)) %>%
                 tidyr::unite(variable, variable, time) %>%
                 tidyr::spread(variable, value)
