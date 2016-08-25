@@ -124,6 +124,13 @@ Version: 2.1.0
 Hash: 50e297b0191179c39c7dcae0eff72b51
 Requires: digest, gtable, plyr, reshape2, scales
 
+Package: ggvis
+Source: CRAN
+Version: 0.4.3
+Hash: a07305b428e152610e3ad30a536f3004
+Requires: assertthat, dplyr, htmltools, jsonlite, lazyeval, magrittr,
+    shiny
+
 Package: git2r
 Source: CRAN
 Version: 0.15.0
@@ -155,6 +162,12 @@ Source: CRAN
 Version: 0.7
 Hash: f60506850a2d752dff69fc2a31c5a339
 Requires: htmltools, jsonlite, yaml
+
+Package: httpuv
+Source: CRAN
+Version: 1.3.3
+Hash: fbb5e8447f797c5148046b1ce999d000
+Requires: Rcpp
 
 Package: httr
 Source: CRAN
@@ -309,6 +322,12 @@ Source: CRAN
 Version: 0.4.0
 Hash: 99ca163a301d7c1d959424a2cccdcacd
 Requires: RColorBrewer, Rcpp, dichromat, labeling, munsell, plyr
+
+Package: shiny
+Source: CRAN
+Version: 0.13.2
+Hash: 28d6903a44dc53bd4823fa43ccdc08e5
+Requires: R6, digest, htmltools, httpuv, jsonlite, mime, xtable
 
 Package: storr
 Source: github
