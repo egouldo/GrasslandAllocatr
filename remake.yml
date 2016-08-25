@@ -1,12 +1,19 @@
 packages:
-  GrasslandAllocatr
+  - GrasslandAllocatr
+  - RNetica
 
 targets:
   all:
+    depends: build_field_data
+
+  build_field_data:
     depends:
       - 2014_field_data_by_quadrat
       - 2014_field_data_by_transect
       - 2014_field_data_by_mu
+      - processed_data/2014_casefile.cas
+
+  #----------------- Build and Summarise Field Data ----------
 
   2014_field_data_by_quadrat:
     command: build_raw_dataset(raw_field_data = "./data/field_data_raw_2014.csv",
@@ -18,4 +25,7 @@ targets:
 
   2014_field_data_by_mu:
     command: generate_case_file_data_frame(field_data_by_transect = `2014_field_data_by_transect`, year = 1)
+
+  processed_data/2014_casefile.cas:
+    command: write.CaseFile(`2014_field_data_by_mu`, file = 'processed_data/2014_casefile.cas')
 
