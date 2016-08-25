@@ -37,6 +37,12 @@ Source: CRAN
 Version: 1.1-2
 Hash: c0d56cd15034f395874c870141870c25
 
+Package: RNetica
+Source: source
+Version: 0.4-4
+Hash: 44fbabe4036fb68e99027048d28fe175
+SourcePath: /Users/Elise/Documents/code/myrepo/RNetica
+
 Package: Rcpp
 Source: CRAN
 Version: 0.12.6
