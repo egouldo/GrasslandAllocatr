@@ -6,6 +6,7 @@ targets:
     depends:
       - 2014_field_data_by_quadrat
       - 2014_field_data_by_transect
+      - 2014_field_data_by_mu
 
   2014_field_data_by_quadrat:
     command: build_raw_dataset(raw_field_data = "./data/field_data_raw_2014.csv",
@@ -14,4 +15,7 @@ targets:
 
   2014_field_data_by_transect:
     command: summarise_by_transect(`2014_field_data_by_quadrat`)
+
+  2014_field_data_by_mu:
+    command: generate_case_file_data_frame(field_data_by_transect = `2014_field_data_by_transect`, year = 1)
 
