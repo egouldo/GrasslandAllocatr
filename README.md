@@ -1,6 +1,6 @@
 # GrasslandAllocatr: *An R package for allocating a schedule of management actions among a suite of grasslands.*
 
-This package is based on the work of Paul Rees and Elise Gould, in fulfilment of their Master of Science degreees at the School of Botany (now School of BioSciences), University of Melbourne. Please note that this package is still in active development.
+This package is based on the work of Paul Rees and Elise Gould, in partial fulfilment of their Master of Science degreees at the School of Botany (now School of BioSciences), University of Melbourne. Please note that this package is still in active development.
 
 The package is built around two models:
 
