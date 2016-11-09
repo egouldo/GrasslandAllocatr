@@ -1,6 +1,6 @@
 PackratFormat: 1.4
 PackratVersion: 0.4.7.1
-RVersion: 3.3.0
+RVersion: 3.3.1
 Repos: CRAN=https://cran.rstudio.com/
 
 Package: BH
@@ -20,6 +20,16 @@ Hash: 750ebdfd60aa5094c787e465f64f566f
 Requires: htmlwidgets, igraph, influenceR, rstudioapi, scales, stringr,
     visNetwork
 
+Package: EML
+Source: github
+Version: 1.0.0.0
+Hash: 48a0f69ab203a1eee071805220c150f1
+Requires: XML
+GithubRepo: EML
+GithubUsername: ropensci
+GithubRef: master
+GithubSha1: 69ef85a8f95f6b3fd18063be9c9b82b797a782f7
+
 Package: NMF
 Source: CRAN
 Version: 0.20.6
@@ -29,8 +39,8 @@ Requires: RColorBrewer, colorspace, digest, doParallel, foreach,
 
 Package: R6
 Source: CRAN
-Version: 2.1.2
-Hash: c515e41c73294952cbb33ee1c1be5a2d
+Version: 2.2.0
+Hash: 712773a3439bd32db5c40938e1a9aac2
 
 Package: RColorBrewer
 Source: CRAN
@@ -47,6 +57,11 @@ Package: Rcpp
 Source: CRAN
 Version: 0.12.6
 Hash: 79f89fabd832de0a2e60aa05d9027f32
+
+Package: XML
+Source: CRAN
+Version: 3.98-1.4
+Hash: 9f8bc34c3c3d2967c7d25f8945216ffa
 
 Package: assertthat
 Source: CRAN
@@ -91,8 +106,8 @@ Hash: 576a9d297a567d6a5ebd164ca5221590
 
 Package: curl
 Source: CRAN
-Version: 1.2
-Hash: 11de7924273ee61a95c7a157a572bc8a
+Version: 2.2
+Hash: 4533829fb0026bd0dea77ba8f1612d37
 
 Package: data.table
 Source: CRAN
@@ -237,8 +252,8 @@ Hash: 488b93c2a4166db0d15f1e8d882cb1d4
 
 Package: jsonlite
 Source: CRAN
-Version: 1.0
-Hash: f32817e181c39ede83fdd3e699348b69
+Version: 1.1
+Hash: 86d4b85b84421a4815f1bb4872e30ef4
 
 Package: knitr
 Source: CRAN
@@ -292,8 +307,8 @@ Requires: colorspace
 
 Package: openssl
 Source: CRAN
-Version: 0.9.4
-Hash: 5ceb5d83bba44e8e5a764ac6ad32e9fb
+Version: 0.9.5
+Hash: 26776a287eaffb2331c9a449c1d2a791
 
 Package: optparse
 Source: CRAN
