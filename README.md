@@ -1,6 +1,6 @@
 # GrasslandAllocatr: *An R package for allocating a schedule of management actions among a suite of grasslands.*
 
-This package is based on the work of Paul Rees and Elise Gould, in fulfilment of their Master of Science degreees at the School of Botany (now School of BioSciences), University of Melbourne. Please note that this package is still in active development.
+This package is based on the work of Paul Rees and Elise Gould, in partial fulfilment of their Master of Science degreees at the School of Botany (now School of BioSciences), University of Melbourne. Please note that this package is still in active development.
 
 The package is built around two models:
 
@@ -29,4 +29,6 @@ Metadata pertaining to information about field site locations and management is 
 1. Contains the latitude and longitude of all transects at the 0m mark on the quadrat. `./data/field_site_locations_<YEAR>.csv`
 2. A table of management actions, and burn histories at each transect: `./data/field_site_management_<YEAR>.csv` Links to `field_data_raw_<YEAR>.csv` by `transect_number`, links to `field_species_lookup_table_<YEAR>.csv` by `species`.
 3. A table of all species encountered during each year's field sampling period and their origin and growth form type: `./data/field_species_lookup_table_<YEAR>.csv` Links to `field_data_raw_<YEAR>.csv` by `species`.
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
 
