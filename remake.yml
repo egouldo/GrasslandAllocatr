@@ -2,9 +2,14 @@ packages:
   - GrasslandAllocatr
   - RNetica
 
+sources:
+  - R/load_compile_grassland_bbn.R
+
 targets:
   all:
-    depends: build_field_data
+    depends:
+      - build_field_data
+      - load_learn_process_model
 
   build_field_data:
     depends:
@@ -12,6 +17,13 @@ targets:
       - 2014_field_data_by_transect
       - 2014_field_data_by_mu
       - processed_data/2014_casefile.cas
+
+  load_learn_process_model:
+    depends:
+      - grassland_bbn # No Learning
+      #- process_model_learning_1 # Paul Rees' data (no fire) -
+      #- process_model_learning_2 # My 2014 data (snapshot, but with fire)
+      #- process_model_learning_3 # 2015 data (Fiona Coates' data)
 
   #----------------- Build and Summarise Field Data ----------
 
@@ -29,3 +41,16 @@ targets:
   processed_data/2014_casefile.cas:
     command: write.CaseFile(`2014_field_data_by_mu`, file = 'processed_data/2014_casefile.cas')
 
+  #---------------- Load and Learn Process Model --------------
+
+  grassland_bbn: # load and compile process model with no learning
+    command: load_compile_grassland_bbn("./data/grassland_bbn_no_learning.dne")
+
+  #process_model_learning_1: # learn with Paul's 2010 - 2011 data
+    #command:
+
+  #process_model_learning_2: # learn with "2014_casefile.cas"
+    #command:
+
+  #process_model_learning_3: # learn with "2015_casefile.cas"
+    #command:
