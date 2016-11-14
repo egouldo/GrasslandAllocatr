@@ -30,5 +30,9 @@ Metadata pertaining to information about field site locations and management is 
 2. A table of management actions, and burn histories at each transect: `./data/field_site_management_<YEAR>.csv` Links to `field_data_raw_<YEAR>.csv` by `transect_number`, links to `field_species_lookup_table_<YEAR>.csv` by `species`.
 3. A table of all species encountered during each year's field sampling period and their origin and growth form type: `./data/field_species_lookup_table_<YEAR>.csv` Links to `field_data_raw_<YEAR>.csv` by `species`.
 
+
+
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
 
+
+[![Build Status](https://travis-ci.org/egouldo/GrasslandAllocatr.png)](https://travis-ci.org/egouldo/GrasslandAllocatr)
