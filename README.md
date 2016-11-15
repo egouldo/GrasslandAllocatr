@@ -7,32 +7,31 @@ The package is built around two models:
 1. `GrasslandBBN`: A Bayesian Belief Network model predicting condition for a single grassland in response to management at annual time-steps over a period of 5 years. The original model was built by Paul Rees, and has been parameterised with data collectd by both Paul Rees and Elise Gould.
 2. `GrasslandAllocatr`: A decision model for allocating actions through time among a suite of grasslands. This model uses the predictions of the `GrasslandBBN` and a choice of algorithm and performance metrics for optimally allocating effort under a limited budget. This model is the work of Elise Gould.
 
-# About the data:
+# To install this package (for using on your own data):
 
-Field data for learning the GrasslandBBN parameters is derived from two separate field campaigns, each with two sampling seasons occurring in spring of two consecutive years.
+Install the package using `devtools`: `devtools::install_github("egouldo/GrasslandAllocatr")`
 
-1. 2011 and 2012
-2. 2014 and 2015
+If you don't have devtools installed, install it like so: `install.packages("devtools")`
 
-Field sampling was undertaken on grasslands of the Victorian Volcanic Plains in the west of Greater Melbourne.
+# To reproduce the analysis using Paul Rees' and Elise Gould's data:
 
-### A note on data de-identification
+Download and build the package:
 
-Note that field data has been de-identified from both the managing agency and its location in order to protect the location of field sites. Please contact the creator of this repository for further information, should you require site location details.
+1. Clone or download this github repository.
+2. Open the `GrasslandAllocatr.Rproj` file in Rstudi
+3. From the menu: Build > Build and Reload
 
-- Field data is stored in a main file of the filename format: `field_data_raw_<YEAR>.csv`
+Install reproduce using the `remake` package [remake on Github](https://github.com/richfitz/remake):
 
-Metadata pertaining to information about field site locations and management is stored in the following files:
+1. Install remake: `devtools::install_github("richfitz/remake")`
+2. Install remake dependencies: `install.packages(c("R6", "yaml", "digest", "crayon", "optparse"))`
+3. One more dependency: `devtools::install_github("richfitz/storr")`
 
-- Masterfile: `./data/field_site_locations_managers_<YEAR>.csv` - *Not present* in this repository, but split into the following files, which *are* present in this repository:
-
-1. Contains the latitude and longitude of all transects at the 0m mark on the quadrat. `./data/field_site_locations_<YEAR>.csv`
-2. A table of management actions, and burn histories at each transect: `./data/field_site_management_<YEAR>.csv` Links to `field_data_raw_<YEAR>.csv` by `transect_number`, links to `field_species_lookup_table_<YEAR>.csv` by `species`.
-3. A table of all species encountered during each year's field sampling period and their origin and growth form type: `./data/field_species_lookup_table_<YEAR>.csv` Links to `field_data_raw_<YEAR>.csv` by `species`.
-
-
+### Licensing and Build Status:
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
 
 
 [![Build Status](https://travis-ci.org/egouldo/GrasslandAllocatr.png)](https://travis-ci.org/egouldo/GrasslandAllocatr)
+
+For more detailed information about the data contained in this repository, and about the data analysis / model building pipelines in this software, please see the wiki.
