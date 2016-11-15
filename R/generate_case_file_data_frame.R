@@ -14,8 +14,8 @@
 generate_case_file_data_frame <- function(field_data_by_transect, year = c(0:5)) {
         # Remove Illegal state names for management:
         field_data_by_transect %<>%
-                dplyr::filter(management %in% c("No_Management
-WC",
+                dplyr::filter(management %in% c("No_Management",
+"WC",
                                                 "Fire_WC",
                                                 "Grazing_WC",
                                                 "SowingForbs_WC"))
