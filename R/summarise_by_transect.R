@@ -25,7 +25,7 @@ summarise_by_transect <- function(field_data_by_quadrat) {
         diversity_dat <-
                 field_data_by_quadrat %>%
                 dplyr::group_by(transect_number, type) %>%
-                tally %>%
+                dplyr::summarise(n = n_distinct(species)) %>%
                 dplyr::filter(type == "E" | type == "NF") %>%
                 tidyr::spread(type, n) %>%
                 dplyr::rename(NF_diversity = NF, E_diversity = E)
