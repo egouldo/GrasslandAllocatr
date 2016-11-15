@@ -34,4 +34,4 @@ Install reproduce using the `remake` package [remake on Github](https://github.c
 
 [![Build Status](https://travis-ci.org/egouldo/GrasslandAllocatr.png)](https://travis-ci.org/egouldo/GrasslandAllocatr)
 
-For more detailed information about the data contained in this repository, and about the data analysis / model building pipelines in this software, please see the wiki.
+For more detailed information about the data contained in this repository, and about the data analysis / model building pipelines in this software, please [see the wiki](https://github.com/egouldo/GrasslandAllocatr/wiki).
