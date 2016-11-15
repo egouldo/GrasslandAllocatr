@@ -12,6 +12,14 @@
 #' @details Please ensure the following rows are supplied: \code{management_unit}, \code{BG_mean}, \code{E_mean}, \code{E_diversity}, \code{NF_diversity}, \code{management}, \code{years_since}. Note that if you are providing observations for Management period t0, the column \code{management} is still required. You can fill this character variable with \code{NA}, the function will remove it as necessary since there is no \code{t0} \code{management} period.
 #'
 generate_case_file_data_frame <- function(field_data_by_transect, year = c(0:5)) {
+        # Remove Illegal state names for management:
+        field_data_by_transect %<>%
+                dplyr::filter(management %in% c("No_Management
+WC",
+                                                "Fire_WC",
+                                                "Grazing_WC",
+                                                "SowingForbs_WC"))
+
         # Aggregate all replicate transect sampling for each key measure var
         # over each management_unit
         field_data_by_management_unit <-
@@ -34,8 +42,8 @@ generate_case_file_data_frame <- function(field_data_by_transect, year = c(0:5))
                                                     ifelse(variable ==
                                                                    "E_diversity",
                                                            "WeedDiversity",
-                                                           ifelse(variable == "year_chars_since",
-                                                                  "year_charsSince", ifelse(
+                                                           ifelse(variable == "years_since",
+                                                                  "YearsSince", ifelse(
                                                                   variable == "NF_diversity", "IndigSpp_transect", "Grassland_Condition")))))) %>%
                 dplyr::mutate(time = paste0("t", year_char)) %>%
                 tidyr::unite(variable, variable, time) %>%
