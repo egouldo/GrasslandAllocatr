@@ -3,7 +3,7 @@ packages:
   - RNetica
 
 sources:
-  - R/remake_functions_utils.R
+  - remake/utils/remake_functions_utils.R
 
 targets:
   all:
