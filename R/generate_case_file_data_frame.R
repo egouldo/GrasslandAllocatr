@@ -55,9 +55,8 @@ generate_case_file_data_frame <- function(field_data_by_transect, year = c(0:5))
                                 tidyr::gather(variable, value, -management_unit) %>%
                                 dplyr::mutate(year = ifelse(variable == "Management", year - 1, year), year = as.character(year),
                                               year = ifelse(year == 0, "",year),
-                                        time = paste0("t", year)) %>% dplyr::select(-year) %>%
+                                        time = paste0("t", year)) %>% dplyr::select(-year) %>% dplyr::filter(variable != "Management_t-1") %>%
                                 tidyr::unite(variable, variable, time) %>%
-                                dplyr::filter(variable != "Management_t-1") %>%
                                 tidyr::spread(variable, value)})
 
 
