@@ -1,4 +1,4 @@
-#' Generate Netica Case File as a \code{data_frame}
+#' Summarise field data by transect over each management unit
 #'
 #' @param field_data_by_transect The raw field data with key variables summarised over all quadrats within each transect
 #'
@@ -11,7 +11,7 @@
 #'
 #' @details Please ensure the following rows are supplied: \code{management_unit}, \code{BG_mean}, \code{E_mean}, \code{E_diversity}, \code{NF_diversity}, \code{management}, \code{years_since}. Note that if you are providing observations for Management period t0, the column \code{management} is still required. You can fill this character variable with \code{NA}, the function will remove it as necessary since there is no \code{t0} \code{management} period.
 #'
-generate_case_file_data_frame <- function(field_data_by_transect, year = c(0:5)) {
+summarise_by_mu <- function(field_data_by_transect, year = c(0:5)) {
         # Aggregate all replicate transect sampling for each key measure var
         # over each management_unit
         field_data_by_management_unit <-
