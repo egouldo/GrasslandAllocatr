@@ -1,3 +1,8 @@
+load_Netica_LicenseKey <- function(path = "./data/LicenseKey"){
+        load(path)
+        RNetica::StartNetica(license = LicenseKey)
+}
+
 load_compile_grassland_bbn <- function(path = character) {
         grassland_bbn <- RNetica::ReadNetworks(path)
         CompileNetwork(grassland_bbn)
