@@ -34,8 +34,8 @@ generate_case_file_data_frame <- function(field_data_by_transect, year = c(0:5))
                                                     ifelse(variable ==
                                                                    "E_diversity",
                                                            "WeedDiversity",
-                                                           ifelse(variable == "years_since",
-                                                                  "YearsSince", ifelse(
+                                                           ifelse(variable == "year_chars_since",
+                                                                  "year_charsSince", ifelse(
                                                                   variable == "NF_diversity", "IndigSpp_transect", "Grassland_Condition")))))) %>%
                 dplyr::mutate(time = paste0("t", year_char)) %>%
                 tidyr::unite(variable, variable, time) %>%
