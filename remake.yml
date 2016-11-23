@@ -1,4 +1,6 @@
 packages:
+  - magrittr
+  - dplyr
   - GrasslandAllocatr
   - RNetica
 
