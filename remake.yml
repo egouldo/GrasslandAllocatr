@@ -18,6 +18,7 @@ targets:
       - field_data_by_quadrat_2014
       - field_data_by_transect_2014
       - field_data_by_mu_2014
+      - casefile_df
       - processed_data/casefile_2014.cas
 
   load_learn_process_model:
@@ -38,10 +39,13 @@ targets:
     command: summarise_by_transect(field_data_by_quadrat_2014)
 
   field_data_by_mu_2014:
-    command: generate_case_file_data_frame(field_data_by_transect = field_data_by_transect_2014, year = 1)
+    command: summarise_by_mu(field_data_by_transect = field_data_by_transect_2014, year = 1)
+
+  casefile_df:
+    command: generate_case_file_df(field_data_by_mu = field_data_by_mu_2014)
 
   processed_data/casefile_2014.cas:
-    command: write.CaseFile(field_data_by_mu_2014, file = 'processed_data/casefile_2014.cas')
+    command:  write.CaseFile(casefile_df, file = 'processed_data/casefile_2014.cas')
 
   #---------------- Load and Learn Process Model --------------
 
