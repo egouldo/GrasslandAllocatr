@@ -6,6 +6,7 @@ packages:
 
 sources:
   - remake/utils/remake_functions_utils.R
+  - remake/utils/field_data_2010_2011_reshape.R
 
 targets:
   all:
@@ -18,15 +19,18 @@ targets:
       - field_data_by_quadrat_2014
       - field_data_by_transect_2014
       - field_data_by_mu_2014
-      - casefile_df
+      - casefile_df_2014
       - processed_data/casefile_2014.cas
+      - field_data_by_mu_2010_2011
+      - casefile_df_2010_2011
+      - processed_data/casefile_2010_2011.cas
 
   load_learn_process_model:
     depends:
       - grassland_bbn # No Learning
-      #- process_model_learning_1 # Paul Rees' data (no fire) -
-      #- process_model_learning_2 # My 2014 data (snapshot, but with fire)
-      #- process_model_learning_3 # 2015 data (Fiona Coates' data)
+      - grassland_bbn_learned_1 # Paul Rees' data (no fire) -
+      - grassland_bbn_learned_2 # My 2014 data (snapshot, but with fire)
+      #- grassland_bbn_learned_3 # 2015 data (Fiona Coates' data)
 
   #----------------- Build and Summarise Field Data ----------
 
@@ -41,25 +45,36 @@ targets:
   field_data_by_mu_2014:
     command: summarise_by_mu(field_data_by_transect = field_data_by_transect_2014, year = 1)
 
-  casefile_df:
+  casefile_df_2014:
     command: generate_case_file_df(field_data_by_mu = field_data_by_mu_2014)
 
   processed_data/casefile_2014.cas:
-    command:  write.CaseFile(casefile_df, file = 'processed_data/casefile_2014.cas')
+    command:  write.CaseFile(casefile_df_2014, file = 'processed_data/casefile_2014.cas')
 
-  #---------------- Load and Learn Process Model --------------
+  field_data_by_mu_2010_2011:
+    command: reshape_pauls_data_all_years(file_path = "./data/field_data_by_transect_2010-2011.csv")
+
+  casefile_df_2010_2011:
+    command:  generate_case_file_df(field_data_by_mu = field_data_by_mu_2010_2011)
+
+  processed_data/casefile_2010_2011.cas:
+    command: write.CaseFile(casefile_df_2010_2011, file = 'processed_data/casefile_2010_2011.cas')
+
+  # ---------------- Load and Learn Process Model --------------
 
   grassland_bbn: # load and compile process model with no learning
     command: load_compile_grassland_bbn("./data/grassland_bbn_no_learning.dne")
 
-  #process_model_learning_1: # learn with Paul's 2010 - 2011 data
-    #command:
+  grassland_bbn_learned_1:
+    command: learn_grassland_bbn(network = grassland_bbn, casefile_path = "processed_data/casefile_2010_2011.cas",first_iteration = TRUE)
 
-  #process_model_learning_2: # learn with "2014_casefile.cas"
-    #command:
+  grassland_bbn_learned_2:
+    command: learn_grassland_bbn(network = grassland_bbn_learned_1, casefile_path = "processed_data/casefile_2014.cas",first_iteration = FALSE)
 
-  #process_model_learning_3: # learn with "2015_casefile.cas"
-    #command:
+  # process_model_learning_3: # learn with "2015_casefile.cas"
+    # command:
+
+  # ----------- Decision Modelling with Hypothetical Sites -------
 
 
 
