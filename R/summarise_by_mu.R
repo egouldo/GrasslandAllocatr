@@ -34,8 +34,8 @@ summarise_by_mu <- function(field_data_by_transect, year = c(0:5)) {
                                                     ifelse(variable ==
                                                                    "E_diversity",
                                                            "WeedDiversity",
-                                                           ifelse(variable == "year_chars_since",
-                                                                  "year_charsSince", ifelse(
+                                                           ifelse(variable == "years_since",
+                                                                  "years_Since", ifelse(
                                                                   variable == "NF_diversity", "IndigSpp_transect", "Grassland_Condition")))))) %>%
                 dplyr::mutate(time = paste0("t", year_char)) %>%
                 tidyr::unite(variable, variable, time) %>%
