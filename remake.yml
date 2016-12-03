@@ -25,12 +25,13 @@ targets:
       - casefile_df_2010_2011
       - processed_data/casefile_2010_2011.cas
 
+
   load_learn_process_model:
-    depends:
-      - grassland_bbn # No Learning
-      - grassland_bbn_learned_1 # Paul Rees' data (no fire) -
-      - grassland_bbn_learned_2 # My 2014 data (snapshot, but with fire)
+    depends: processed_data/grassland_bbn_learned_1.dne # Paul Rees' data (no fire) -
+      #- grassland_bbn_learned_2 # My 2014 data (snapshot, but with fire)
       #- grassland_bbn_learned_3 # 2015 data (Fiona Coates' data)
+      #- processed_data/grassland_bbn_learned_1.dne
+      #- processed_data/grassland_bbn_learned_2.dne
 
   #----------------- Build and Summarise Field Data ----------
 
@@ -62,17 +63,12 @@ targets:
 
   # ---------------- Load and Learn Process Model --------------
 
-  grassland_bbn: # load and compile process model with no learning
-    command: load_compile_grassland_bbn("./data/grassland_bbn_no_learning.dne")
+  #processed_data/grassland_bbn_learned_1.dne:
+    #command: learn_grassland_bbn(path = "./data/grassland_bbn_no_learning.dne", casefile_path = "processed_data/casefile_2010_2011.cas",first_iteration = TRUE, save_path = "processed_data/grassland_bbn_learned_1.dne")
 
-  grassland_bbn_learned_1:
-    command: learn_grassland_bbn(network = grassland_bbn, casefile_path = "processed_data/casefile_2010_2011.cas",first_iteration = TRUE)
+  #processed_data/grassland_bbn_learned_2.dne:
+    #command: learn_grassland_bbn(path = "processed_data/grassland_bbn_learned_1.dne", casefile_path = "processed_data/casefile_2014.cas",first_iteration = FALSE, save_path = "processed_data/grassland_bbn_learned_2.dne")
 
-  grassland_bbn_learned_2:
-    command: learn_grassland_bbn(network = grassland_bbn_learned_1, casefile_path = "processed_data/casefile_2014.cas",first_iteration = FALSE)
-
-  # process_model_learning_3: # learn with "2015_casefile.cas"
-    # command:
 
   # ----------- Decision Modelling with Hypothetical Sites -------
 
