@@ -4,14 +4,17 @@
 \alias{learn_grassland_bbn}
 \title{Learn \code{grassland_bbn} with EM Learning algorithm}
 \usage{
-learn_grassland_bbn(network, casefile_path, first_iteration = TRUE)
+learn_grassland_bbn(path, casefile_path, first_iteration = TRUE, save_path)
 }
 \arguments{
-\item{network}{An active \code{Netica BN} object, defaults to \code{grassland_bbn}}
+\item{path}{Filepath to a grassland_bbn Netica network}
 
 \item{casefile_path}{A character string containing the path to the Netica casefile}
 
 \item{first_iteration}{Logical, is this the first iteration of learning by casefile? defaults to \code{TRUE}.}
+}
+\value{
+grassland_bbn The R object pointer to the NeticaAPI network
 }
 \description{
 Learn \code{grassland_bbn} with EM Learning algorithm
