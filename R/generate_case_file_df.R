@@ -4,30 +4,23 @@
 #'
 #' @return casefile_df A dataframe of the same dimensions as \code{field_data_by_mu}, but with the \code{management_unit} column removed and a new \code{IDnum} column.
 #' @export
-#' @import dplyr, magrittr
+#' @import dplyr, magrittr, purrr
 #'
 generate_case_file_df <- function(field_data_by_mu){
 
         casefile_df <- field_data_by_mu %>%
                 tbl_df()
-
-        # Ensure that only management actions considered in the model are present within casefile:
+        # Define legal candidate actions, and function to ID illegal ones
         candidate_actions <- c("No_Management",
                                "WC",
                                "Fire_WC",
                                "Grazing_WC",
                                "SowingForbs_WC")
-        management_df <-
-                casefile_df %>%
-                dplyr::select(management_unit, starts_with("Management"))
-        colnames(management_df) <- c("management_unit", "management")
-        management_df %<>%
-                dplyr::filter(management %in% candidate_actions)
-        casefile_df %<>%
-                dplyr::select(-starts_with("Management",ignore.case = FALSE)) %>%
-                dplyr::right_join(.,management_df, by = "management_unit")
+        filter_candidate_action <- function(x) ifelse(x %in% candidate_actions,yes = x,no = NA)
+        # Replace any illegal action in Management cols with NA, otherwise, keep.
+        casefile_df %<>% mutate_at(.cols = vars(contains("Management", ignore.case = FALSE)) , .funs = filter_candidate_action) %>% drop_na()
         # Remove management_unit col, add IDnum col:
-        casefile_df <-  casefile_df %>%
+        casefile_df %<>%
                 dplyr::select(-management_unit) %>%
                 dplyr::mutate(IDnum = c(1:n()))
         return(casefile_df)
