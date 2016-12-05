@@ -66,7 +66,7 @@ site_condition %>%
 
 ```
 
-![mock-plot.png](GrasslandAllocatr/ms/notes/2016_12_05-ESA-notes_files/figure-markdown_github/mock-plot-1.png)
+![mock-plot.png](ms/notes/2016_12_05-ESA-notes_files/figure-markdown_github/mock-plot-1.png)
 
 From the plot above, I've generated a mock-plot of two decision-outcomes and their resultant portfolios. I've plotted the condition of each site after management for each one. Under scenario 1 we've allocated on a site-by-site basis (the method of allocation doesn't matter for now). Now imagine if we could forego some benefit at our best site (site 1) after management and allocate this effort at site 8 instead (scenario 2). Because the benefit of management depends on the initial condition of the site, you can obtain more marginal benefit at the site in lower condition, than at a site in higher condition. So when you measure, say, the average condition across all of the sites, it is greater under scenario 2 than under scenario 1. Imagine scenario 2 is more like the frontier + optimisation approach.
 
