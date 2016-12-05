@@ -29,6 +29,10 @@ Install reproduce using the `remake` package [remake on Github](https://github.c
 
 ### Licensing and Build Status:
 
+The software and content in this repository is copyright of Elise Gould, Libby Rumpff, and Peter Vesk. Please cite this work, as follows:
+
+Gould, E., Rumpff, L. Vesk, P. (2016 in prep.) Managing Grasslands with Models: Resolving uncertainty and allocating effort among a suite of sites.
+
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
 
 
