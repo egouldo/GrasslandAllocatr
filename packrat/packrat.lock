@@ -1,6 +1,6 @@
 PackratFormat: 1.4
 PackratVersion: 0.4.7.1
-RVersion: 3.3.2
+RVersion: 3.3.3
 Repos: BioCsoft=https://bioconductor.org/packages/3.4/bioc,
     BioCann=https://bioconductor.org/packages/3.4/data/annotation,
     BioCexp=https://bioconductor.org/packages/3.4/data/experiment,
@@ -487,13 +487,13 @@ GithubSha1: 4756931d669cd8dd35b2e6a5e7b3d16e441d4afa
 
 Package: stringi
 Source: CRAN
-Version: 1.1.1
-Hash: 48f2afc5dfecb65ba32a87d38b3533ff
+Version: 1.1.2
+Hash: 1ad6b1cc11d982ac233bf2fa2f7c9684
 
 Package: stringr
 Source: CRAN
-Version: 1.0.0
-Hash: 2676dd5f88890910962b733b0f9540e1
+Version: 1.2.0
+Hash: 25a86d7f410513ebb7c0bc6a5e16bdc3
 Requires: magrittr, stringi
 
 Package: tibble
