@@ -8,3 +8,4 @@ packrat/lib*/
 /.remake
 /processed_data
 /data/LicenseKey
+/data/field_data_by_quadrat_2014.rda
