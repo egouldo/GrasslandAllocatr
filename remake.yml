@@ -3,6 +3,7 @@ packages:
   - dplyr
   - GrasslandAllocatr
   - RNetica
+  - devtools
 
 sources:
   - remake/utils/remake_functions_utils.R
@@ -12,6 +13,7 @@ targets:
   all:
     depends:
       - build_field_data
+      - packaged_data
 #      - load_learn_process_model
 
   build_field_data:
@@ -33,7 +35,16 @@ targets:
       #- processed_data/grassland_bbn_learned_1.dne
       #- processed_data/grassland_bbn_learned_2.dne
 
-  #----------------- Build and Summarise Field Data ----------
+  packaged_data:
+    depends:
+      - data/field_data_by_quadrat_2014.rda
+      - data/field_data_by_transect_2014.rda
+      - data/field_data_by_mu_2014.rda
+      - data/casefile_df_2014.rda
+      - data/field_data_by_mu_2010_2011.rda
+      - data/casefile_df_2010_2011.rda
+
+  #----------------- Build and Summarise Field Data "build_field_data"----------
 
   field_data_by_quadrat_2014:
     command: build_raw_dataset(raw_field_data = "./data-raw/field_data_raw_2014.csv",
@@ -61,10 +72,6 @@ targets:
   processed_data/casefile_2010_2011.cas:
     command: write.CaseFile(casefile_df_2010_2011, file = 'processed_data/casefile_2010_2011.cas')
 
-  # ---------------- Write Rda objects for export in pkg -------
-
-  #devtools::use_data(field_data_by_transect_2014,field_data_by_mu_2014, casefile_df_2014, field_data_by_mu_2010_2011, casefile_df_2010_2011, overwrite = TRUE)
-
   # ---------------- Load and Learn Process Model --------------
 
   #processed_data/grassland_bbn_learned_1.dne:
@@ -73,6 +80,25 @@ targets:
   #processed_data/grassland_bbn_learned_2.dne:
     #command: learn_grassland_bbn(path = "processed_data/grassland_bbn_learned_1.dne", casefile_path = "processed_data/casefile_2014.cas",first_iteration = FALSE, save_path = "processed_data/grassland_bbn_learned_2.dne")
 
+  # ---------------- Write Rda objects for export in pkg "packaged_data" -------
+
+  data/field_data_by_transect_2014.rda:
+    command: use_data(field_data_by_transect_2014, overwrite = TRUE)
+
+  data/field_data_by_quadrat_2014.rda:
+    command: use_data(field_data_by_quadrat_2014, overwrite = TRUE)
+
+  data/field_data_by_mu_2014.rda:
+    command: use_data(field_data_by_mu_2014, overwrite = TRUE)
+
+  data/casefile_df_2014.rda:
+    command: use_data(casefile_df_2014, overwrite = TRUE)
+
+  data/field_data_by_mu_2010_2011.rda:
+    command: use_data(field_data_by_mu_2010_2011, overwrite = TRUE)
+
+  data/casefile_df_2010_2011.rda:
+    command: use_data(casefile_df_2010_2011, overwrite = TRUE)
 
   # ----------- Decision Modelling with Hypothetical Sites -------
 
