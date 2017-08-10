@@ -15,4 +15,3 @@ Define relative file path for overcoming working directory madness
 \details{
 Please see \url{https://github.com/krlmlr/rprojroot.git} on github for details. Note that this definition of the function checks for R package scaffolding in order to find the root path (as opposed to Rstudio files, etc).
 }
-

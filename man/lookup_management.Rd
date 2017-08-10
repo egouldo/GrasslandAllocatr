@@ -17,4 +17,3 @@ raw_field_data_w_management The new data frame containing raw field data plus ad
 \description{
 Match transect management history and other site-level information
 }
-
