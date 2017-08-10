@@ -12,7 +12,7 @@ targets:
   all:
     depends:
       - build_field_data
-      - load_learn_process_model
+#      - load_learn_process_model
 
   build_field_data:
     depends:
@@ -26,8 +26,8 @@ targets:
       - processed_data/casefile_2010_2011.cas
 
 
-  load_learn_process_model:
-    depends: processed_data/grassland_bbn_learned_1.dne # Paul Rees' data (no fire) -
+#  load_learn_process_model:
+#    depends: processed_data/grassland_bbn_learned_1.dne # Paul Rees' data (no fire) -
       #- grassland_bbn_learned_2 # My 2014 data (snapshot, but with fire)
       #- grassland_bbn_learned_3 # 2015 data (Fiona Coates' data)
       #- processed_data/grassland_bbn_learned_1.dne
@@ -36,9 +36,9 @@ targets:
   #----------------- Build and Summarise Field Data ----------
 
   field_data_by_quadrat_2014:
-    command: build_raw_dataset(raw_field_data = "./data/field_data_raw_2014.csv",
-                  species_lookup_data = "./data/field_species_lookup_table_2014.csv",
-                  management_lookup_data = "./data/field_site_management_2014.csv")
+    command: build_raw_dataset(raw_field_data = "./data-raw/field_data_raw_2014.csv",
+                  species_lookup_data = "./data-raw/field_species_lookup_table_2014.csv",
+                  management_lookup_data = "./data-raw/field_site_management_2014.csv")
 
   field_data_by_transect_2014:
     command: summarise_by_transect(field_data_by_quadrat_2014)
@@ -53,13 +53,17 @@ targets:
     command:  write.CaseFile(casefile_df_2014, file = 'processed_data/casefile_2014.cas')
 
   field_data_by_mu_2010_2011:
-    command: reshape_pauls_data_all_years(file_path = "./data/field_data_by_transect_2010-2011.csv")
+    command: reshape_pauls_data_all_years(file_path = "./data-raw/field_data_by_transect_2010_2011.csv")
 
   casefile_df_2010_2011:
     command:  generate_case_file_df(field_data_by_mu = field_data_by_mu_2010_2011)
 
   processed_data/casefile_2010_2011.cas:
     command: write.CaseFile(casefile_df_2010_2011, file = 'processed_data/casefile_2010_2011.cas')
+
+  # ---------------- Write Rda objects for export in pkg -------
+
+  #devtools::use_data(field_data_by_transect_2014,field_data_by_mu_2014, casefile_df_2014, field_data_by_mu_2010_2011, casefile_df_2010_2011, overwrite = TRUE)
 
   # ---------------- Load and Learn Process Model --------------
 
