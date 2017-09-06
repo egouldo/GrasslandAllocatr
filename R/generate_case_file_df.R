@@ -4,7 +4,9 @@
 #'
 #' @return casefile_df A dataframe of the same dimensions as \code{field_data_by_mu}, but with the \code{management_unit} column removed and a new \code{IDnum} column.
 #' @export
-#' @import dplyr, magrittr, purrr
+#' @import dplyr
+#' @import magrittr
+#' @import purrr
 #'
 generate_case_file_df <- function(field_data_by_mu){
 
