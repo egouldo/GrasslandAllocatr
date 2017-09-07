@@ -1,4 +1,4 @@
-transect_number,quadrat,species,cover
+transect_number,quadrat,species,percent_cover
 33,1,avena fatua,20
 33,1,elymus scaber,20
 33,1,bromus hordeaceus,10
