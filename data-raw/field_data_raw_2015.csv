@@ -4030,91 +4030,91 @@ transect_number,quadrat,species,cover
 24,10,vulpia bromoides,5
 24,10,vicia hirsuta,0.5
 24,10,BG,40
-14a,1,nassella neesiana,2
-14a,1,plantago lanceolata,10
-14a,1,avena fatua,0.5
-14a,1,romulea rosea,40
-14a,1,asperula conferta,1
-14a,1,convolvulus angustissimus,1
-14a,1,elymus scaber,1
-14a,1,*Poaceae sp.,0.5
-14a,1,themeda triandra,1
-14a,1,BG,35
-14a,2,avena fatua,0.5
-14a,2,plantago lanceolata,10
-14a,2,convolvulus angustissimus,5
-14a,2,nassella trichotoma,1
-14a,2,briza maxima,0.5
-14a,2,nassella neesiana,30
-14a,2,romulea rosea,2
-14a,2,aira caryophyllea,0.5
-14a,2,briza minor,0.5
-14a,2,BG,50
-14a,3,nassella neesiana,15
-14a,3,plantago lanceolata,15
-14a,3,romulea rosea,10
-14a,3,nassella trichotoma,5
-14a,3,rytidosperma caespitosum,0.5
-14a,3,aira caryophyllea,0.5
-14a,3,BG,40
-14a,4,elymus scaber,0.5
-14a,4,plantago lanceolata,20
-14a,4,romulea rosea,5
-14a,4,nassella neesiana,2
-14a,4,nassella trichotoma,2
-14a,4,briza maxima,0.5
-14a,4,*Poaceae sp.,10
-14a,4,cheilanthes austrotenuifolia,0.5
-14a,4,oxalis perennans,1
-14a,4,BG,50
-14a,5,austrostipa bigeniculata,2
-14a,5,asperula conferta,1
-14a,5,plantago lanceolata,10
-14a,5,nassella trichotoma,2
-14a,5,acaena echinata,0.5
-14a,5,romulea rosea,2
-14a,5,aira caryophyllea,0.5
-14a,5,briza maxima,0.5
-14a,5,maireana enchylaenoides,0.5
-14a,5,solenogyne dominii,0.5
-14a,5,calocephalus citreus,1
-14a,5,convolvulus angustissimus,0.5
-14a,5,BG,70
-14b,6,elymus scaber,0.5
-14b,6,plantago lanceolata,10
-14b,6,romulea rosea,5
-14b,6,nassella trichotoma,5
-14b,6,nassella neesiana,40
-14b,6,chloris truncata,1
-14b,6,BG,40
-14b,7,nassella neesiana,60
-14b,7,plantago lanceolata,5
-14b,7,nassella trichotoma,2
-14b,7,convolvulus angustissimus,0.5
-14b,7,romulea rosea,5
-14b,7,BG,30
-14b,8,plantago lanceolata,20
-14b,8,romulea rosea,10
-14b,8,convolvulus angustissimus,5
-14b,8,nassella neesiana,25
-14b,8,oxalis perennans,1
-14b,8,nassella trichotoma,1
-14b,8,BG,40
-14b,9,plantago lanceolata,5
-14b,9,nassella trichotoma,1
-14b,9,austrostipa bigeniculata,5
-14b,9,rytidosperma setaceum,0.5
-14b,9,briza minor,0.5
-14b,9,romulea rosea,2
-14b,9,convolvulus angustissimus,0.5
-14b,9,BG,60
-14b,10,calocephalus citreus,0.5
-14b,10,plantago lanceolata,5
-14b,10,nassella trichotoma,1
-14b,10,briza minor,0.5
-14b,10,nassella neesiana,2
-14b,10,convolvulus angustissimus,5
-14b,10,chloris truncata,1
-14b,10,sonchus asper,0.5
-14b,10,avena fatua,0.5
-14b,10,BG,50
+20,1,nassella neesiana,2
+20,1,plantago lanceolata,10
+20,1,avena fatua,0.5
+20,1,romulea rosea,40
+20,1,asperula conferta,1
+20,1,convolvulus angustissimus,1
+20,1,elymus scaber,1
+20,1,*Poaceae sp.,0.5
+20,1,themeda triandra,1
+20,1,BG,35
+20,2,avena fatua,0.5
+20,2,plantago lanceolata,10
+20,2,convolvulus angustissimus,5
+20,2,nassella trichotoma,1
+20,2,briza maxima,0.5
+20,2,nassella neesiana,30
+20,2,romulea rosea,2
+20,2,aira caryophyllea,0.5
+20,2,briza minor,0.5
+20,2,BG,50
+20,3,nassella neesiana,15
+20,3,plantago lanceolata,15
+20,3,romulea rosea,10
+20,3,nassella trichotoma,5
+20,3,rytidosperma caespitosum,0.5
+20,3,aira caryophyllea,0.5
+20,3,BG,40
+20,4,elymus scaber,0.5
+20,4,plantago lanceolata,20
+20,4,romulea rosea,5
+20,4,nassella neesiana,2
+20,4,nassella trichotoma,2
+20,4,briza maxima,0.5
+20,4,*Poaceae sp.,10
+20,4,cheilanthes austrotenuifolia,0.5
+20,4,oxalis perennans,1
+20,4,BG,50
+20,5,austrostipa bigeniculata,2
+20,5,asperula conferta,1
+20,5,plantago lanceolata,10
+20,5,nassella trichotoma,2
+20,5,acaena echinata,0.5
+20,5,romulea rosea,2
+20,5,aira caryophyllea,0.5
+20,5,briza maxima,0.5
+20,5,maireana enchylaenoides,0.5
+20,5,solenogyne dominii,0.5
+20,5,calocephalus citreus,1
+20,5,convolvulus angustissimus,0.5
+20,5,BG,70
+20,6,elymus scaber,0.5
+20,6,plantago lanceolata,10
+20,6,romulea rosea,5
+20,6,nassella trichotoma,5
+20,6,nassella neesiana,40
+20,6,chloris truncata,1
+20,6,BG,40
+20,7,nassella neesiana,60
+20,7,plantago lanceolata,5
+20,7,nassella trichotoma,2
+20,7,convolvulus angustissimus,0.5
+20,7,romulea rosea,5
+20,7,BG,30
+20,8,plantago lanceolata,20
+20,8,romulea rosea,10
+20,8,convolvulus angustissimus,5
+20,8,nassella neesiana,25
+20,8,oxalis perennans,1
+20,8,nassella trichotoma,1
+20,8,BG,40
+20,9,plantago lanceolata,5
+20,9,nassella trichotoma,1
+20,9,austrostipa bigeniculata,5
+20,9,rytidosperma setaceum,0.5
+20,9,briza minor,0.5
+20,9,romulea rosea,2
+20,9,convolvulus angustissimus,0.5
+20,9,BG,60
+20,10,calocephalus citreus,0.5
+20,10,plantago lanceolata,5
+20,10,nassella trichotoma,1
+20,10,briza minor,0.5
+20,10,nassella neesiana,2
+20,10,convolvulus angustissimus,5
+20,10,chloris truncata,1
+20,10,sonchus asper,0.5
+20,10,avena fatua,0.5
+20,10,BG,50
