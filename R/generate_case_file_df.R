@@ -8,22 +8,39 @@
 #' @import magrittr
 #' @import purrr
 #'
-generate_case_file_df <- function(field_data_by_mu){
+generate_case_file_df <- function(...){
+time_slices <- list(...)
+        transform_casefile_protocol <- function(df) {
+          casefile_df <- df %>%
+                  tbl_df()
+          # Define legal candidate actions, and function to ID illegal ones
+          candidate_actions <- c("No_Management",
+                                 "WC",
+                                 "Fire_WC",
+                                 "Grazing_WC",
+                                 "SowingForbs_WC")
+          filter_candidate_action <- function(x) ifelse(x %in% candidate_actions,yes = x,no = NA)
+          # Replace any illegal action in Management cols with NA, otherwise, keep.
+          casefile_df %<>% mutate_at(.vars = vars(dplyr::contains("Management", ignore.case = FALSE)) , .funs = filter_candidate_action) %>% drop_na()
+          # Remove management_unit col, add IDnum col:
+          casefile_df %<>%
+                  dplyr::select(-management_unit) %>%
+                  dplyr::mutate(IDnum = c(1:n()))
+          return(casefile_df)
+        }
 
-        casefile_df <- field_data_by_mu %>%
-                tbl_df()
-        # Define legal candidate actions, and function to ID illegal ones
-        candidate_actions <- c("No_Management",
-                               "WC",
-                               "Fire_WC",
-                               "Grazing_WC",
-                               "SowingForbs_WC")
-        filter_candidate_action <- function(x) ifelse(x %in% candidate_actions,yes = x,no = NA)
-        # Replace any illegal action in Management cols with NA, otherwise, keep.
-        casefile_df %<>% mutate_at(.vars = vars(dplyr::contains("Management", ignore.case = FALSE)) , .funs = filter_candidate_action) %>% drop_na()
-        # Remove management_unit col, add IDnum col:
-        casefile_df %<>%
-                dplyr::select(-management_unit) %>%
-                dplyr::mutate(IDnum = c(1:n()))
+        time_slices <- lapply(X = time_slices, FUN = transform_casefile_protocol)
+
+        if(length(time_slices) > 1){
+                casefile_df <-
+                        time_slices %>%
+                        purrr::reduce(dplyr::left_join, by = "IDnum")
+                return(casefile_df)
+        } else{
+                casefile_df <-
+                        time_slices %>%
+                        purrr::flatten_df(.)
+                return(casefile_df)
+        }
         return(casefile_df)
 }
