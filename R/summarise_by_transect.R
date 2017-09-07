@@ -19,7 +19,7 @@ summarise_by_transect <- function(field_data_by_quadrat) {
                 tidyr::spread(type, pc_type) %>%
                 dplyr::group_by(transect_number) %>%
                 dplyr::select(-quadrat) %>%
-                dplyr::summarise_each(funs = c("mean", "sd")) %>%
+                dplyr::summarise_all(.funs = c("mean", "sd")) %>%
                 tidyr::replace_na(., list(BG_mean = 0, E_mean = 0, NG_mean = 0, BG_sd = 0, E_sd = 0, NG_sd = 0))
         # Get diversity variables
         diversity_dat <-
