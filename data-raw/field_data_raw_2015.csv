@@ -476,67 +476,67 @@ transect_number,quadrat,species,cover
 38,10,lolium perenne,0.5
 38,10,austrostipa bigeniculata,0.5
 38,10,BG,60
-4a,1,rytidosperma setaceum,5
-4a,1,austrostipa bigeniculata,30
-4a,1,romulea rosea,5
-4a,1,vulpia bromoides,0.5
-4a,1,oxalis perennans,0.5
-4a,1,plantago lanceolata,0.5
-4a,1,themeda triandra,5
-4a,1,BG,50
-4a,2,austrostipa bigeniculata,10
-4a,2,romulea rosea,20
-4a,2,convolvulus angustissimus,0.5
-4a,2,wahlenbergia sp.,1
-4a,2,rytidosperma setaceum,20
-4a,2,plantago lanceolata,0.5
-4a,2,plantago coronopus,0.5
-4a,2,BG,40
-4a,3,rytidosperma setaceum,5
-4a,3,austrostipa bigeniculata,50
-4a,3,romulea rosea,5
-4a,3,BG,40
-4a,4,themeda triandra,50
-4a,4,vulpia bromoides,5
-4a,4,austrostipa scabra subsp. falcata,10
-4a,4,romulea rosea,2
-4a,4,rytidosperma setaceum,2
-4a,4,BG,20
-4a,5,themeda triandra,50
-4a,5,romulea rosea,5
-4a,5,austrostipa bigeniculata,2
-4a,5,vulpia bromoides,0.5
-4a,5,BG,45
-4b,6,austrostipa bigeniculata,0.5
-4b,6,rytidosperma setaceum,1
-4b,6,romulea rosea,40
-4b,6,vulpia bromoides,0.5
-4b,6,austrostipa scabra subsp. falcata,10
-4b,6,BG,45
-4b,7,themeda triandra,50
-4b,7,romulea rosea,2
-4b,7,rytidosperma setaceum,0.5
-4b,7,austrostipa scabra subsp. falcata,0.5
-4b,7,BG,50
-4b,8,themeda triandra,30
-4b,8,austrostipa scabra subsp. falcata,20
-4b,8,romulea rosea,5
-4b,8,rytidosperma setaceum,5
-4b,8,vulpia bromoides,0.5
-4b,8,BG,40
-4b,9,themeda triandra,5
-4b,9,rytidosperma setaceum,2
-4b,9,chrysocephalum semipapposum,0.5
-4b,9,romulea rosea,5
-4b,9,aira caryophyllea,0.5
-4b,9,austrostipa scabra subsp. falcata,20
-4b,9,BG,60
-4b,10,themeda triandra,45
-4b,10,rytidosperma setaceum,0.5
-4b,10,romulea rosea,2
-4b,10,austrostipa scabra subsp. falcata,5
-4b,10,aira caryophyllea,0.5
-4b,10,BG,50
+4,1,rytidosperma setaceum,5
+4,1,austrostipa bigeniculata,30
+4,1,romulea rosea,5
+4,1,vulpia bromoides,0.5
+4,1,oxalis perennans,0.5
+4,1,plantago lanceolata,0.5
+4,1,themeda triandra,5
+4,1,BG,50
+4,2,austrostipa bigeniculata,10
+4,2,romulea rosea,20
+4,2,convolvulus angustissimus,0.5
+4,2,wahlenbergia sp.,1
+4,2,rytidosperma setaceum,20
+4,2,plantago lanceolata,0.5
+4,2,plantago coronopus,0.5
+4,2,BG,40
+4,3,rytidosperma setaceum,5
+4,3,austrostipa bigeniculata,50
+4,3,romulea rosea,5
+4,3,BG,40
+4,4,themeda triandra,50
+4,4,vulpia bromoides,5
+4,4,austrostipa scabra subsp. falcata,10
+4,4,romulea rosea,2
+4,4,rytidosperma setaceum,2
+4,4,BG,20
+4,5,themeda triandra,50
+4,5,romulea rosea,5
+4,5,austrostipa bigeniculata,2
+4,5,vulpia bromoides,0.5
+4,5,BG,45
+4,6,austrostipa bigeniculata,0.5
+4,6,rytidosperma setaceum,1
+4,6,romulea rosea,40
+4,6,vulpia bromoides,0.5
+4,6,austrostipa scabra subsp. falcata,10
+4,6,BG,45
+4,7,themeda triandra,50
+4,7,romulea rosea,2
+4,7,rytidosperma setaceum,0.5
+4,7,austrostipa scabra subsp. falcata,0.5
+4,7,BG,50
+4,8,themeda triandra,30
+4,8,austrostipa scabra subsp. falcata,20
+4,8,romulea rosea,5
+4,8,rytidosperma setaceum,5
+4,8,vulpia bromoides,0.5
+4,8,BG,40
+4,9,themeda triandra,5
+4,9,rytidosperma setaceum,2
+4,9,chrysocephalum semipapposum,0.5
+4,9,romulea rosea,5
+4,9,aira caryophyllea,0.5
+4,9,austrostipa scabra subsp. falcata,20
+4,9,BG,60
+4,10,themeda triandra,45
+4,10,rytidosperma setaceum,0.5
+4,10,romulea rosea,2
+4,10,austrostipa scabra subsp. falcata,5
+4,10,aira caryophyllea,0.5
+4,10,BG,50
 18,1,themeda triandra,50
 18,1,eryngium ovinum,10
 18,1,briza maxima,2
@@ -771,126 +771,126 @@ transect_number,quadrat,species,cover
 21,10,anthoxanthum odoratum,0.5
 21,10,oxalis perennans,0.5
 21,10,BG,15
-22a,1,galenia pubescens,40
-22a,1,aira caryophyllea,0.5
-22a,1,vulpia myuros,10
-22a,1,avena fatua,0.5
-22a,1,trifolium glomeratum,0.5
-22a,1,polycarpon tetraphyllum,0.5
-22a,1,BG,40
-22a,2,podolepis jaceoides,10
-22a,2,galenia pubescens,15
-22a,2,sonchus asper,0.5
-22a,2,trifolium striatum,5
-22a,2,cerastium glomeratum,0.5
-22a,2,petrorhagia dubia,1
-22a,2,avena fatua,0.5
-22a,2,vulpia myuros,0.5
-22a,2,oxalis corniculata,1
-22a,2,polycarpon tetraphyllum,1
-22a,2,aira caryophyllea,1
-22a,2,austrostipa curticoma,1
-22a,2,microlaena stipoides,1
-22a,2,euphorbia drummondii,2
-22a,2,trifolium glomeratum,0.5
-22a,2,BG,30
-22a,3,avena fatua,1
-22a,3,trifolium striatum,2
-22a,3,themeda triandra,15
-22a,3,nassella trichotoma,2
-22a,3,oxalis perennans,0.5
-22a,3,trifolium glomeratum,0.5
-22a,3,sonchus asper,0.5
-22a,3,senecio quadridentatus,0.5
-22a,3,cirsium vulgare,0.5
-22a,3,vulpia myuros,0.5
-22a,3,austrostipa curticoma,2
-22a,3,convolvulus angustissimus,0.5
-22a,3,BG,10
-22a,4,vulpia myuros,0.5
-22a,4,galenia pubescens,1
-22a,4,Polycarpon tetraphyllum,15
-22a,4,trifolium striatum,1
-22a,4,cerastium glomeratum,0.5
-22a,4,trifolium glomeratum,0.5
-22a,4,crassula sieberiana,0.5
-22a,4,erodium sp.,0.5
-22a,4,euphorbia drummondii,1
-22a,4,BG,30
-22a,5,avena fatua,0.5
-22a,5,vulpia myuros,1
-22a,5,sonchus asper,1
-22a,5,austrostipa bigeniculata,10
-22a,5,trifolium striatum,1
-22a,5,oxalis corniculata,1
-22a,5,aira caryophyllea,0.5
-22a,5,bromus hordeaceus,1
-22a,5,polycarpon tetraphyllum,0.5
-22a,5,BG,15
-22a,6,sonchus asper,0.5
-22a,6,cerastium glomeratum,0.5
-22a,6,Polycarpon tetraphyllum,0.5
-22a,6,oxalis corniculata,0.5
-22a,6,galenia pubescens,0.5
-22a,6,trifolium campestre,0.5
-22a,6,BG,0
-22b,1,dianella admixta,30
-22b,1,vulpia myuros,0.5
-22b,1,oxalis perennans,0.5
-22b,1,convolvulus angustissimus,10
-22b,1,galenia pubescens,20
-22b,1,sonchus asper,0.5
-22b,1,melilotus indicus,0.5
-22b,1,austrostipa bigeniculata,0.5
-22b,1,romulea rosea,0.5
-22b,1,vulpia bromoides,0.5
-22b,1,hypochaeris radicata,0.5
-22b,1,microlaena stipoides,0.5
-22b,1,trifolium striatum,0.5
-22b,1,rapistrum rugosum,0.5
-22b,1,avena fatua,0.5
-22b,1,BG,40
-22b,2,linum marginale,15
-22b,2,convolvulus angustissimus,15
-22b,2,oxalis perennans,1
-22b,2,trifolium striatum,5
-22b,2,petrorhagia dubia,1
-22b,2,trifolium campestre,2
-22b,2,rapistrum rugosum,0.5
-22b,2,avena fatua,0.5
-22b,2,romulea rosea,0.5
-22b,2,cerastium glomeratum,0.5
-22b,2,vulpia myuros,0.5
-22b,2,vulpia bromoides,1
-22b,2,bromus hordeaceus,0.5
-22b,2,sonchus asper,0.5
-22b,2,microlaena stipoides,0.5
-22b,2,austrostipa bigeniculata,10
-22b,2,trifolium glomeratum,1
-22b,2,BG,15
-22c,1,avena fatua,0.5
-22c,1,sonchus asper,2
-22c,1,galenia pubescens,2
-22c,1,austrostipa bigeniculata,2
-22c,1,dianella admixta,0.5
-22c,1,oxalis perennans,0.5
-22c,1,linum marginale,1
-22c,1,themeda triandra,0.5
-22c,1,rapistrum rugosum,0.5
-22c,1,rytidosperma racemosum,0.5
-22c,1,BG,35
-22c,2,avena fatua,0.5
-22c,2,austrostipa bigeniculata,5
-22c,2,petrorhagia dubia,0.5
-22c,2,cerastium glomeratum,0.5
-22c,2,trifolium glomeratum,0.5
-22c,2,trifolium arvense,2
-22c,2,convolvulus angustissimus,1
-22c,2,sonchus asper,0.5
-22c,2,romulea rosea,0.5
-22c,2,microlaena stipoides,1
-22c,2,oxalis perennans,0.5
-22c,2,BG,10
+22,1,galenia pubescens,40
+22,1,aira caryophyllea,0.5
+22,1,vulpia myuros,10
+22,1,avena fatua,0.5
+22,1,trifolium glomeratum,0.5
+22,1,polycarpon tetraphyllum,0.5
+22,1,BG,40
+22,2,podolepis jaceoides,10
+22,2,galenia pubescens,15
+22,2,sonchus asper,0.5
+22,2,trifolium striatum,5
+22,2,cerastium glomeratum,0.5
+22,2,petrorhagia dubia,1
+22,2,avena fatua,0.5
+22,2,vulpia myuros,0.5
+22,2,oxalis corniculata,1
+22,2,polycarpon tetraphyllum,1
+22,2,aira caryophyllea,1
+22,2,austrostipa curticoma,1
+22,2,microlaena stipoides,1
+22,2,euphorbia drummondii,2
+22,2,trifolium glomeratum,0.5
+22,2,BG,30
+22,3,avena fatua,1
+22,3,trifolium striatum,2
+22,3,themeda triandra,15
+22,3,nassella trichotoma,2
+22,3,oxalis perennans,0.5
+22,3,trifolium glomeratum,0.5
+22,3,sonchus asper,0.5
+22,3,senecio quadridentatus,0.5
+22,3,cirsium vulgare,0.5
+22,3,vulpia myuros,0.5
+22,3,austrostipa curticoma,2
+22,3,convolvulus angustissimus,0.5
+22,3,BG,10
+22,4,vulpia myuros,0.5
+22,4,galenia pubescens,1
+22,4,Polycarpon tetraphyllum,15
+22,4,trifolium striatum,1
+22,4,cerastium glomeratum,0.5
+22,4,trifolium glomeratum,0.5
+22,4,crassula sieberiana,0.5
+22,4,erodium sp.,0.5
+22,4,euphorbia drummondii,1
+22,4,BG,30
+22,5,avena fatua,0.5
+22,5,vulpia myuros,1
+22,5,sonchus asper,1
+22,5,austrostipa bigeniculata,10
+22,5,trifolium striatum,1
+22,5,oxalis corniculata,1
+22,5,aira caryophyllea,0.5
+22,5,bromus hordeaceus,1
+22,5,polycarpon tetraphyllum,0.5
+22,5,BG,15
+22,6,sonchus asper,0.5
+22,6,cerastium glomeratum,0.5
+22,6,Polycarpon tetraphyllum,0.5
+22,6,oxalis corniculata,0.5
+22,6,galenia pubescens,0.5
+22,6,trifolium campestre,0.5
+22,6,BG,0
+22,7,dianella admixta,30
+22,7,vulpia myuros,0.5
+22,7,oxalis perennans,0.5
+22,7,convolvulus angustissimus,10
+22,7,galenia pubescens,20
+22,7,sonchus asper,0.5
+22,7,melilotus indicus,0.5
+22,7,austrostipa bigeniculata,0.5
+22,7,romulea rosea,0.5
+22,7,vulpia bromoides,0.5
+22,7,hypochaeris radicata,0.5
+22,7,microlaena stipoides,0.5
+22,7,trifolium striatum,0.5
+22,7,rapistrum rugosum,0.5
+22,7,avena fatua,0.5
+22,7,BG,40
+22,8,linum marginale,15
+22,8,convolvulus angustissimus,15
+22,8,oxalis perennans,1
+22,8,trifolium striatum,5
+22,8,petrorhagia dubia,1
+22,8,trifolium campestre,2
+22,8,rapistrum rugosum,0.5
+22,8,avena fatua,0.5
+22,8,romulea rosea,0.5
+22,8,cerastium glomeratum,0.5
+22,8,vulpia myuros,0.5
+22,8,vulpia bromoides,1
+22,8,bromus hordeaceus,0.5
+22,8,sonchus asper,0.5
+22,8,microlaena stipoides,0.5
+22,8,austrostipa bigeniculata,10
+22,8,trifolium glomeratum,1
+22,8,BG,15
+22,9,avena fatua,0.5
+22,9,sonchus asper,2
+22,9,galenia pubescens,2
+22,9,austrostipa bigeniculata,2
+22,9,dianella admixta,0.5
+22,9,oxalis perennans,0.5
+22,9,linum marginale,1
+22,9,themeda triandra,0.5
+22,9,rapistrum rugosum,0.5
+22,9,rytidosperma racemosum,0.5
+22,9,BG,35
+22,10,avena fatua,0.5
+22,10,austrostipa bigeniculata,5
+22,10,petrorhagia dubia,0.5
+22,10,cerastium glomeratum,0.5
+22,10,trifolium glomeratum,0.5
+22,10,trifolium arvense,2
+22,10,convolvulus angustissimus,1
+22,10,sonchus asper,0.5
+22,10,romulea rosea,0.5
+22,10,microlaena stipoides,1
+22,10,oxalis perennans,0.5
+22,10,BG,10
 26,1,themeda triandra,60
 26,1,plantago lanceolata,5
 26,1,briza maxima,5
@@ -1738,112 +1738,112 @@ transect_number,quadrat,species,cover
 7,10,briza minor,0.5
 7,10,rytidosperma setaceum,5
 7,10,BG,0
-16b,1,avena fatua,2
-16b,1,briza maxima,0.5
-16b,1,briza minor,0.5
-16b,1,plantago lanceolata,0.5
-16b,1,lomandra filiformis,2
-16b,1,rytidosperma fulvum,2
-16b,1,themeda triandra,10
-16b,1,BG,0
-16b,2,avena fatua,2
-16b,2,briza maxima,2
-16b,2,phalaris aquatica,0.5
-16b,2,nassella neesiana,1
-16b,2,asperula conferta,10
-16b,2,poa rodwayi,0.5
-16b,2,aira caryophyllea,0.5
-16b,2,vulpia bromoides,20
-16b,2,plantago lanceolata,2
-16b,2,briza minor,0.5
-16b,2,BG,0
-16b,3,themeda triandra,60
-16b,3,lomandra filiformis,10
-16b,3,dichelachne crinita,0.5
-16b,3,briza maxima,5
-16b,3,oxalis perennans,2
-16b,3,romulea rosea,0.5
-16b,3,plantago lanceolata,0.5
-16b,3,centaurium erythraea,0.5
-16b,3,veronica gracilis,0.5
-16b,3,BG,1
-16b,4,briza maxima,10
-16b,4,lactuca serriola,2
-16b,4,briza minor,20
-16b,4,plantago lanceolata,10
-16b,4,avena fatua,5
-16b,4,nassella neesiana,1
-16b,4,romulea rosea,5
-16b,4,vicia major,2
-16b,4,melilotus indicus,0.5
-16b,4,elymus scaber,0.5
-16b,4,helminthotheca echioides,2
-16b,4,vulpia bromoides,1
-16b,4,BG,1
-16c ,5,avena fatua,0.5
-16c ,5,plantago lanceolata,1
-16c ,5,nassella neesiana,50
-16c ,5,lomandra filiformis,1
-16c ,5,trifolium angustifolium,0.5
-16c ,5,briza maxima,0.5
-16c ,5,romulea rosea,1
-16c ,5,melilotus indicus,0.5
-16c ,5,briza minor,0.5
-16c ,5,nassella trichotoma,5
-16c ,5,BG,25
-16c ,6,avena fatua,1
-16c ,6,briza maxima,2
-16c ,6,briza minor,0.5
-16c ,6,plantago lanceolata,0.5
-16c ,6,vicia major,2
-16c ,6,themeda triandra,20
-16c ,6,rytidosperma fulvum,20
-16c ,6,aira elegantissima,30
-16c ,6,melilotus indicus,0.5
-16c ,6,romulea rosea,2
-16c ,6,veronica gracilis,0.5
-16c ,6,nassella neesiana,2
-16c ,6,BG,5
-16c ,7,plantago lanceolata,5
-16c ,7,themeda triandra,30
-16c ,7,avena fatua,0.5
-16c ,7,veronica gracilis,1
-16c ,7,asperula conferta,0.5
-16c ,7,vicia major,5
-16c ,7,haloragis heterophylla,40
-16c ,7,briza maxima,0.5
-16c ,7,oxalis perennans,0.5
-16c ,7,BG,0.5
-16a,8,briza maxima,30
-16a,8,themeda triandra,50
-16a,8,plantago lanceolata,2
-16a,8,veronica gracilis,20
-16a,8,vicia major,25
-16a,8,avena fatua,5
-16a,8,lomandra filiformis,2
-16a,8,briza minor,0.5
-16a,8,romulea rosea,2
-16a,8,aira elegantissima,0.5
-16a,8,sonchus oleraceus,0.5
-16a,8,BG,10
-16a,9,briza maxima,10
-16a,9,avena fatua,5
-16a,9,plantago lanceolata,5
-16a,9,briza minor,2
-16a,9,veronica gracilis,10
-16a,9,themeda triandra,10
-16a,9,vicia major,2
-16a,9,romulea rosea,2
-16a,9,BG,10
-16a,10,poa rodwayi,0.5
-16a,10,themeda triandra,30
-16a,10,briza maxima,10
-16a,10,briza minor,0.5
-16a,10,vicia major,2
-16a,10,lomandra filiformis,10
-16a,10,veronica gracilis,2
-16a,10,romulea rosea,2
-16a,10,BG,2
+16,1,avena fatua,2
+16,1,briza maxima,0.5
+16,1,briza minor,0.5
+16,1,plantago lanceolata,0.5
+16,1,lomandra filiformis,2
+16,1,rytidosperma fulvum,2
+16,1,themeda triandra,10
+16,1,BG,0
+16,2,avena fatua,2
+16,2,briza maxima,2
+16,2,phalaris aquatica,0.5
+16,2,nassella neesiana,1
+16,2,asperula conferta,10
+16,2,poa rodwayi,0.5
+16,2,aira caryophyllea,0.5
+16,2,vulpia bromoides,20
+16,2,plantago lanceolata,2
+16,2,briza minor,0.5
+16,2,BG,0
+16,3,themeda triandra,60
+16,3,lomandra filiformis,10
+16,3,dichelachne crinita,0.5
+16,3,briza maxima,5
+16,3,oxalis perennans,2
+16,3,romulea rosea,0.5
+16,3,plantago lanceolata,0.5
+16,3,centaurium erythraea,0.5
+16,3,veronica gracilis,0.5
+16,3,BG,1
+16,4,briza maxima,10
+16,4,lactuca serriola,2
+16,4,briza minor,20
+16,4,plantago lanceolata,10
+16,4,avena fatua,5
+16,4,nassella neesiana,1
+16,4,romulea rosea,5
+16,4,vicia major,2
+16,4,melilotus indicus,0.5
+16,4,elymus scaber,0.5
+16,4,helminthotheca echioides,2
+16,4,vulpia bromoides,1
+16,4,BG,1
+16,5,avena fatua,0.5
+16,5,plantago lanceolata,1
+16,5,nassella neesiana,50
+16,5,lomandra filiformis,1
+16,5,trifolium angustifolium,0.5
+16,5,briza maxima,0.5
+16,5,romulea rosea,1
+16,5,melilotus indicus,0.5
+16,5,briza minor,0.5
+16,5,nassella trichotoma,5
+16,5,BG,25
+16,6,avena fatua,1
+16,6,briza maxima,2
+16,6,briza minor,0.5
+16,6,plantago lanceolata,0.5
+16,6,vicia major,2
+16,6,themeda triandra,20
+16,6,rytidosperma fulvum,20
+16,6,aira elegantissima,30
+16,6,melilotus indicus,0.5
+16,6,romulea rosea,2
+16,6,veronica gracilis,0.5
+16,6,nassella neesiana,2
+16,6,BG,5
+16,7,plantago lanceolata,5
+16,7,themeda triandra,30
+16,7,avena fatua,0.5
+16,7,veronica gracilis,1
+16,7,asperula conferta,0.5
+16,7,vicia major,5
+16,7,haloragis heterophylla,40
+16,7,briza maxima,0.5
+16,7,oxalis perennans,0.5
+16,7,BG,0.5
+16,8,briza maxima,30
+16,8,themeda triandra,50
+16,8,plantago lanceolata,2
+16,8,veronica gracilis,20
+16,8,vicia major,25
+16,8,avena fatua,5
+16,8,lomandra filiformis,2
+16,8,briza minor,0.5
+16,8,romulea rosea,2
+16,8,aira elegantissima,0.5
+16,8,sonchus oleraceus,0.5
+16,8,BG,10
+16,9,briza maxima,10
+16,9,avena fatua,5
+16,9,plantago lanceolata,5
+16,9,briza minor,2
+16,9,veronica gracilis,10
+16,9,themeda triandra,10
+16,9,vicia major,2
+16,9,romulea rosea,2
+16,9,BG,10
+16,10,poa rodwayi,0.5
+16,10,themeda triandra,30
+16,10,briza maxima,10
+16,10,briza minor,0.5
+16,10,vicia major,2
+16,10,lomandra filiformis,10
+16,10,veronica gracilis,2
+16,10,romulea rosea,2
+16,10,BG,2
 30,1,themeda triandra,90
 30,1,aira caryophyllea,1
 30,1,romulea rosea,1
@@ -2134,9 +2134,9 @@ transect_number,quadrat,species,cover
 29,8,romulea rosea,1
 29,8,dichelachne crinita,0.5
 29,8,lomandra filiformis,5
-29,8,briza minor,D
-29,8,gonocarpus tetragynus,
-29,8,melilotus indicus,
+29,8,briza minor,0.5
+29,8,gonocarpus tetragynus,0.5
+29,8,melilotus indicus,0.5
 29,8,BG,35
 29,9,themeda triandra,40
 29,9,pimelea curviflora,5
@@ -3211,146 +3211,146 @@ transect_number,quadrat,species,cover
 25,10,austrostipa bigeniculata,1
 25,10,oxalis perennans,0.5
 25,10,BG,50
-13a,1,lomandra filiformis,50
-13a,1,aira caryophyllea,20
-13a,1,briza maxima,2
-13a,1,plantago lanceolata,1
-13a,1,austrostipa bigeniculata,0.5
-13a,1,vulpia bromoides,5
-13a,1,romulea rosea,1
-13a,1,acaena echinata,0.5
-13a,1,schoenus apogon,0.5
-13a,1,elymus scaber,0.5
-13a,1,BG,10
-13a,2,calocephalus lacteus,30
-13a,2,plantago lanceolata,5
-13a,2,briza minor,0.5
-13a,2,aira caryophyllea,10
-13a,2,schoenus apogon,5
-13a,2,romulea rosea,5
-13a,2,acaena echinata,2
-13a,2,austrostipa bigeniculata,1
-13a,2,haloragis heterophylla,20
-13a,2,rytidosperma erianthum,1
-13a,2,BG,20
-13a,3,vulpia bromoides,5
-13a,3,plantago lanceolata,20
-13a,3,romulea rosea,5
-13a,3,acaena echinata,1
-13a,3,aira caryophyllea,1
-13a,3,briza minor,0.5
-13a,3,nassella neesiana,1
-13a,3,microlaena stipoides,40
-13a,3,melilotus indicus,0.5
-13a,3,elymus scaber,5
-13a,3,themeda triandra,0.5
-13a,3,BG,20
-13a,4,plantago lanceolata,10
-13a,4,microlaena stipoides,50
-13a,4,aira caryophyllea,40
-13a,4,elymus scaber,2
-13a,4,briza minor,0.5
-13a,4,romulea rosea,1
-13a,4,oxalis perennans,0.5
-13a,4,vulpia bromoides,0.5
-13a,4,BG,2
-13a,5,elymus scaber,10
-13a,5,plantago lanceolata,30
-13a,5,holcus lanatus,0.5
-13a,5,briza minor,0.5
-13a,5,lolium perenne,0.5
-13a,5,*Poaceae sp.,10
-13a,5,romulea rosea,0.5
-13a,5,phalaris aquatica,1
-13a,5,aira caryophyllea,15
-13a,5,vulpia bromoides,10
-13a,5,BG,2
-13b,10,caesia calliantha,5
-13b,10,holcus lanatus,1
-13b,10,briza minor,40
-13b,10,romulea rosea,2
-13b,10,plantago lanceolata,40
-13b,10,bromus hordeaceus,0.5
-13b,10,aira caryophyllea,5
-13b,10,oxalis perennans,1
-13b,10,melilotus indicus,0.5
-13b,10,arthropodium strictum,0.5
-13b,10,sonchus asper,0.5
-13b,10,poa rodwayi,0.5
-13b,10,asperula conferta,0.5
-13b,10,vulpia bromoides,0.5
-13b,10,elymus scaber,0.5
-13b,10,BG,5
-13b,6,elymus scaber,0.5
-13b,6,plantago lanceolata,40
-13b,6,briza minor,0.5
-13b,6,aira caryophyllea,10
-13b,6,microlaena stipoides,10
-13b,6,romulea rosea,5
-13b,6,vulpia bromoides,20
-13b,6,schoenus apogon,0.5
-13b,6,hypochaeris radicata,1
-13b,6,oxalis perennans,0.5
-13b,6,austrostipa bigeniculata,0.5
-13b,6,rytidosperma erianthum,0.5
-13b,6,lolium perenne,0.5
-13b,6,phalaris aquatica,1
-13b,6,BG,5
-13b,7,dichelachne crinita,1
-13b,7,poa labillardierei,10
-13b,7,elymus scaber,2
-13b,7,plantago lanceolata,20
-13b,7,eryngium ovinum,2
-13b,7,schoenus apogon,1
-13b,7,microlaena stipoides,25
-13b,7,aira caryophyllea,1
-13b,7,romulea rosea,10
-13b,7,austrostipa bigeniculata,0.5
-13b,7,briza minor,0.5
-13b,7,poa rodwayi,2
-13b,7,oxalis perennans,0.5
-13b,7,BG,20
-13b,8,rytidosperma laeve,0.5
-13b,8,rytidosperma erianthum,5
-13b,8,eryngium ovinum,1
-13b,8,microlaena stipoides,50
-13b,8,schoenus apogon,5
-13b,8,oxalis perennans,5
-13b,8,elymus scaber,0.5
-13b,8,briza minor,1
-13b,8,briza maxima,0.5
-13b,8,plantago lanceolata,1
-13b,8,arthropodium strictum,0.5
-13b,8,romulea rosea,15
-13b,8,poa rodwayi,5
-13b,8,aira caryophyllea,5
-13b,8,BG,15
-13b,9,plantago lanceolata,30
-13b,9,austrostipa bigeniculata,0.5
-13b,9,dichelachne crinita,0.5
-13b,9,elymus scaber,0.5
-13b,9,briza minor,1
-13b,9,aira caryophyllea,40
-13b,9,microlaena stipoides,25
-13b,9,vulpia bromoides,0.5
-13b,9,romulea rosea,2
-13b,9,bromus hordeaceus,0.5
-13b,9,BG,2
-13b,10,holcus lanatus,1
-13b,10,briza minor,40
-13b,10,romulea rosea,2
-13b,10,plantago lanceolata,40
-13b,10,bromus hordeaceus,0.5
-13b,10,aira caryophyllea,5
-13b,10,oxalis perennans,1
-13b,10,melilotus indicus,0.5
-13b,10,arthropodium strictum,0.5
-13b,10,sonchus asper,0.5
-13b,10,poa rodwayi,0.5
-13b,10,asperula conferta,0.5
-13b,10,vulpia bromoides,0.5
-13b,10,elymus scaber,0.5
-13b,10,BG,5
+13,1,lomandra filiformis,50
+13,1,aira caryophyllea,20
+13,1,briza maxima,2
+13,1,plantago lanceolata,1
+13,1,austrostipa bigeniculata,0.5
+13,1,vulpia bromoides,5
+13,1,romulea rosea,1
+13,1,acaena echinata,0.5
+13,1,schoenus apogon,0.5
+13,1,elymus scaber,0.5
+13,1,BG,10
+13,2,calocephalus lacteus,30
+13,2,plantago lanceolata,5
+13,2,briza minor,0.5
+13,2,aira caryophyllea,10
+13,2,schoenus apogon,5
+13,2,romulea rosea,5
+13,2,acaena echinata,2
+13,2,austrostipa bigeniculata,1
+13,2,haloragis heterophylla,20
+13,2,rytidosperma erianthum,1
+13,2,BG,20
+13,3,vulpia bromoides,5
+13,3,plantago lanceolata,20
+13,3,romulea rosea,5
+13,3,acaena echinata,1
+13,3,aira caryophyllea,1
+13,3,briza minor,0.5
+13,3,nassella neesiana,1
+13,3,microlaena stipoides,40
+13,3,melilotus indicus,0.5
+13,3,elymus scaber,5
+13,3,themeda triandra,0.5
+13,3,BG,20
+13,4,plantago lanceolata,10
+13,4,microlaena stipoides,50
+13,4,aira caryophyllea,40
+13,4,elymus scaber,2
+13,4,briza minor,0.5
+13,4,romulea rosea,1
+13,4,oxalis perennans,0.5
+13,4,vulpia bromoides,0.5
+13,4,BG,2
+13,5,elymus scaber,10
+13,5,plantago lanceolata,30
+13,5,holcus lanatus,0.5
+13,5,briza minor,0.5
+13,5,lolium perenne,0.5
+13,5,*Poaceae sp.,10
+13,5,romulea rosea,0.5
+13,5,phalaris aquatica,1
+13,5,aira caryophyllea,15
+13,5,vulpia bromoides,10
+13,5,BG,2
+13,10,caesia calliantha,5
+13,10,holcus lanatus,1
+13,10,briza minor,40
+13,10,romulea rosea,2
+13,10,plantago lanceolata,40
+13,10,bromus hordeaceus,0.5
+13,10,aira caryophyllea,5
+13,10,oxalis perennans,1
+13,10,melilotus indicus,0.5
+13,10,arthropodium strictum,0.5
+13,10,sonchus asper,0.5
+13,10,poa rodwayi,0.5
+13,10,asperula conferta,0.5
+13,10,vulpia bromoides,0.5
+13,10,elymus scaber,0.5
+13,10,BG,5
+13,6,elymus scaber,0.5
+13,6,plantago lanceolata,40
+13,6,briza minor,0.5
+13,6,aira caryophyllea,10
+13,6,microlaena stipoides,10
+13,6,romulea rosea,5
+13,6,vulpia bromoides,20
+13,6,schoenus apogon,0.5
+13,6,hypochaeris radicata,1
+13,6,oxalis perennans,0.5
+13,6,austrostipa bigeniculata,0.5
+13,6,rytidosperma erianthum,0.5
+13,6,lolium perenne,0.5
+13,6,phalaris aquatica,1
+13,6,BG,5
+13,7,dichelachne crinita,1
+13,7,poa labillardierei,10
+13,7,elymus scaber,2
+13,7,plantago lanceolata,20
+13,7,eryngium ovinum,2
+13,7,schoenus apogon,1
+13,7,microlaena stipoides,25
+13,7,aira caryophyllea,1
+13,7,romulea rosea,10
+13,7,austrostipa bigeniculata,0.5
+13,7,briza minor,0.5
+13,7,poa rodwayi,2
+13,7,oxalis perennans,0.5
+13,7,BG,20
+13,8,rytidosperma laeve,0.5
+13,8,rytidosperma erianthum,5
+13,8,eryngium ovinum,1
+13,8,microlaena stipoides,50
+13,8,schoenus apogon,5
+13,8,oxalis perennans,5
+13,8,elymus scaber,0.5
+13,8,briza minor,1
+13,8,briza maxima,0.5
+13,8,plantago lanceolata,1
+13,8,arthropodium strictum,0.5
+13,8,romulea rosea,15
+13,8,poa rodwayi,5
+13,8,aira caryophyllea,5
+13,8,BG,15
+13,9,plantago lanceolata,30
+13,9,austrostipa bigeniculata,0.5
+13,9,dichelachne crinita,0.5
+13,9,elymus scaber,0.5
+13,9,briza minor,1
+13,9,aira caryophyllea,40
+13,9,microlaena stipoides,25
+13,9,vulpia bromoides,0.5
+13,9,romulea rosea,2
+13,9,bromus hordeaceus,0.5
+13,9,BG,2
+13,10,holcus lanatus,1
+13,10,briza minor,40
+13,10,romulea rosea,2
+13,10,plantago lanceolata,40
+13,10,bromus hordeaceus,0.5
+13,10,aira caryophyllea,5
+13,10,oxalis perennans,1
+13,10,melilotus indicus,0.5
+13,10,arthropodium strictum,0.5
+13,10,sonchus asper,0.5
+13,10,poa rodwayi,0.5
+13,10,asperula conferta,0.5
+13,10,vulpia bromoides,0.5
+13,10,elymus scaber,0.5
+13,10,BG,5
 8,1,lepidium africanum,1
 8,1,romulea rosea,1
 8,1,themeda triandra,30
@@ -3820,151 +3820,151 @@ transect_number,quadrat,species,cover
 14,10,aira caryophyllea,0.5
 14,10,lolium perenne,0.5
 14,10,BG,20
-15a,1,themeda triandra,30
-15a,1,avena fatua,0.5
-15a,1,plantago lanceolata,0.5
-15a,1,vulpia bromoides,10
-15a,1,rytidosperma setaceum,1
-15a,1,austrostipa bigeniculata,0.5
-15a,1,bromus hordeaceus,0.5
-15a,1,briza maxima,0.5
-15a,1,convolvulus angustissimus,0.5
-15a,1,BG,50
-15a,2,themeda triandra,50
-15a,2,avena fatua,0.5
-15a,2,rytidosperma setaceum,1
-15a,2,oxalis perennans,2
-15a,2,romulea rosea,2
-15a,2,BG,30
-15a,3,themeda triandra,60
-15a,3,romulea rosea,1
-15a,3,vulpia bromoides,2
-15a,3,BG,20
-15a,4,themeda triandra,60
-15a,4,avena fatua,0.5
-15a,4,romulea rosea,0.5
-15a,4,aira caryophyllea,0.5
-15a,4,vulpia bromoides,1
-15a,4,oxalis perennans,1
-15a,4,rytidosperma setaceum,0.5
-15a,4,briza minor,0.5
-15a,4,BG,40
-15a,5,themeda triandra,60
-15a,5,romulea rosea,1
-15a,5,aira caryophyllea,0.5
-15a,5,BG,40
-15b,6,themeda triandra,40
-15b,6,avena fatua,0.5
-15b,6,vulpia bromoides,5
-15b,6,romulea rosea,0.5
-15b,6,plantago lanceolata,0.5
-15b,6,aira caryophyllea,0.5
-15b,6,BG,50
-15b,7,themeda triandra,50
-15b,7,avena fatua,0.5
-15b,7,vulpia bromoides,2
-15b,7,romulea rosea,1
-15b,7,austrostipa bigeniculata,0.5
-15b,7,senecio quadridentatus,0.5
-15b,7,rytidosperma setaceum,0.5
-15b,7,BG,45
-15b,8,themeda triandra,60
-15b,8,avena fatua,0.5
-15b,8,austrostipa bigeniculata,0.5
-15b,8,rutidosis leptorrhynchoides,0.5
-15b,8,aira caryophyllea,0.5
-15b,8,romulea rosea,1
-15b,8,oxalis perennans,1
-15b,8,BG,30
-15b,9,themeda triandra,50
-15b,9,romulea rosea,1
-15b,9,rytidosperma setaceum,1
-15b,9,convolvulus angustissimus,0.5
-15b,9,aira caryophyllea,0
-15b,9,BG,30
-15b,10,themeda triandra,50
-15b,10,rytidosperma setaceum,0.5
-15b,10,romulea rosea,2
-15b,10,vulpia bromoides,1
-15b,10,podolepis jaceoides,0.5
-15b,10,austrostipa bigeniculata,0.5
-15b,10,aira caryophyllea,0.5
-15b,10,plantago lanceolata,0.5
-15b,10,BG,50
-23a,1,rytidosperma setaceum,15
-23a,1,austrostipa bigeniculata,5
-23a,1,bromus hordeaceus,1
-23a,1,avena fatua,0.5
-23a,1,oxalis perennans,0.5
-23a,1,chloris truncata,5
-23a,1,themeda triandra,1
-23a,1,romulea rosea,1
-23a,1,nassella neesiana,5
-23a,1,vulpia bromoides,0.5
-23a,1,BG,30
-23a,2,themeda triandra,70
-23a,2,avena fatua,1
-23a,2,vulpia bromoides,0.5
-23a,2,bromus hordeaceus,0.5
-23a,2,romulea rosea,0.5
-23a,2,centaurium sp.,0.5
-23a,2,BG,20
-23a,3,themeda triandra,75
-23a,3,avena fatua,0.5
-23a,3,briza minor,0.5
-23a,3,romulea rosea,0.5
-23a,3,aira caryophyllea,0.5
-23a,3,BG,20
-23a,4,themeda triandra,70
-23a,4,avena fatua,0.5
-23a,4,rytidosperma setaceum,0.5
-23a,4,romulea rosea,0.5
-23a,4,aira caryophyllea,0.5
-23a,4,vulpia bromoides,0.5
-23a,4,BG,30
-23a,5,trifolium angustifolium,1
-23a,5,themeda triandra,70
-23a,5,avena fatua,0.5
-23a,5,romulea rosea,0.5
-23a,5,melilotus indicus,0.5
-23a,5,BG,30
-23a,6,themeda triandra,60
-23a,6,aira caryophyllea,0.5
-23a,6,romulea rosea,0.5
-23a,6,rytidosperma racemosum,0.5
-23a,6,BG,40
-23b,7,themeda triandra,30
-23b,7,avena fatua,0.5
-23b,7,romulea rosea,0.5
-23b,7,BG,50
-23b,8,sonchus asper,2
-23b,8,avena fatua,0.5
-23b,8,rytidosperma setaceum,5
-23b,8,themeda triandra,10
-23b,8,chloris truncata,0.5
-23b,8,rytidosperma racemosum,1
-23b,8,romulea rosea,1
-23b,8,vulpia bromoides,1
-23b,8,chrysocephalum apiculatum,0.5
-23b,8,austrostipa bigeniculata,2
-23b,8,*brassicaceae sp.,0.5
-23b,8,rytidosperma fulvum,0.5
-23b,8,BG,50
-23b,9,rytidosperma racemosum,10
-23b,9,themeda triandra,5
-23b,9,rytidosperma setaceum,5
-23b,9,avena fatua,0.5
-23b,9,romulea rosea,0.5
-23b,9,sonchus asper,0.5
-23b,9,vulpia bromoides,0.5
-23b,9,austrostipa bigeniculata,1
-23b,9,BG,20
-23b,10,themeda triandra,70
-23b,10,avena fatua,0.5
-23b,10,elymus scaber,0.5
-23b,10,romulea rosea,0.5
-23b,10,aira caryophyllea,0.5
-23b,10,BG,25
+15,1,themeda triandra,30
+15,1,avena fatua,0.5
+15,1,plantago lanceolata,0.5
+15,1,vulpia bromoides,10
+15,1,rytidosperma setaceum,1
+15,1,austrostipa bigeniculata,0.5
+15,1,bromus hordeaceus,0.5
+15,1,briza maxima,0.5
+15,1,convolvulus angustissimus,0.5
+15,1,BG,50
+15,2,themeda triandra,50
+15,2,avena fatua,0.5
+15,2,rytidosperma setaceum,1
+15,2,oxalis perennans,2
+15,2,romulea rosea,2
+15,2,BG,30
+15,3,themeda triandra,60
+15,3,romulea rosea,1
+15,3,vulpia bromoides,2
+15,3,BG,20
+15,4,themeda triandra,60
+15,4,avena fatua,0.5
+15,4,romulea rosea,0.5
+15,4,aira caryophyllea,0.5
+15,4,vulpia bromoides,1
+15,4,oxalis perennans,1
+15,4,rytidosperma setaceum,0.5
+15,4,briza minor,0.5
+15,4,BG,40
+15,5,themeda triandra,60
+15,5,romulea rosea,1
+15,5,aira caryophyllea,0.5
+15,5,BG,40
+15,6,themeda triandra,40
+15,6,avena fatua,0.5
+15,6,vulpia bromoides,5
+15,6,romulea rosea,0.5
+15,6,plantago lanceolata,0.5
+15,6,aira caryophyllea,0.5
+15,6,BG,50
+15,7,themeda triandra,50
+15,7,avena fatua,0.5
+15,7,vulpia bromoides,2
+15,7,romulea rosea,1
+15,7,austrostipa bigeniculata,0.5
+15,7,senecio quadridentatus,0.5
+15,7,rytidosperma setaceum,0.5
+15,7,BG,45
+15,8,themeda triandra,60
+15,8,avena fatua,0.5
+15,8,austrostipa bigeniculata,0.5
+15,8,rutidosis leptorrhynchoides,0.5
+15,8,aira caryophyllea,0.5
+15,8,romulea rosea,1
+15,8,oxalis perennans,1
+15,8,BG,30
+15,9,themeda triandra,50
+15,9,romulea rosea,1
+15,9,rytidosperma setaceum,1
+15,9,convolvulus angustissimus,0.5
+15,9,aira caryophyllea,0
+15,9,BG,30
+15,10,themeda triandra,50
+15,10,rytidosperma setaceum,0.5
+15,10,romulea rosea,2
+15,10,vulpia bromoides,1
+15,10,podolepis jaceoides,0.5
+15,10,austrostipa bigeniculata,0.5
+15,10,aira caryophyllea,0.5
+15,10,plantago lanceolata,0.5
+15,10,BG,50
+23,1,rytidosperma setaceum,15
+23,1,austrostipa bigeniculata,5
+23,1,bromus hordeaceus,1
+23,1,avena fatua,0.5
+23,1,oxalis perennans,0.5
+23,1,chloris truncata,5
+23,1,themeda triandra,1
+23,1,romulea rosea,1
+23,1,nassella neesiana,5
+23,1,vulpia bromoides,0.5
+23,1,BG,30
+23,2,themeda triandra,70
+23,2,avena fatua,1
+23,2,vulpia bromoides,0.5
+23,2,bromus hordeaceus,0.5
+23,2,romulea rosea,0.5
+23,2,centaurium sp.,0.5
+23,2,BG,20
+23,3,themeda triandra,75
+23,3,avena fatua,0.5
+23,3,briza minor,0.5
+23,3,romulea rosea,0.5
+23,3,aira caryophyllea,0.5
+23,3,BG,20
+23,4,themeda triandra,70
+23,4,avena fatua,0.5
+23,4,rytidosperma setaceum,0.5
+23,4,romulea rosea,0.5
+23,4,aira caryophyllea,0.5
+23,4,vulpia bromoides,0.5
+23,4,BG,30
+23,5,trifolium angustifolium,1
+23,5,themeda triandra,70
+23,5,avena fatua,0.5
+23,5,romulea rosea,0.5
+23,5,melilotus indicus,0.5
+23,5,BG,30
+23,6,themeda triandra,60
+23,6,aira caryophyllea,0.5
+23,6,romulea rosea,0.5
+23,6,rytidosperma racemosum,0.5
+23,6,BG,40
+23,7,themeda triandra,30
+23,7,avena fatua,0.5
+23,7,romulea rosea,0.5
+23,7,BG,50
+23,8,sonchus asper,2
+23,8,avena fatua,0.5
+23,8,rytidosperma setaceum,5
+23,8,themeda triandra,10
+23,8,chloris truncata,0.5
+23,8,rytidosperma racemosum,1
+23,8,romulea rosea,1
+23,8,vulpia bromoides,1
+23,8,chrysocephalum apiculatum,0.5
+23,8,austrostipa bigeniculata,2
+23,8,*brassicaceae sp.,0.5
+23,8,rytidosperma fulvum,0.5
+23,8,BG,50
+23,9,rytidosperma racemosum,10
+23,9,themeda triandra,5
+23,9,rytidosperma setaceum,5
+23,9,avena fatua,0.5
+23,9,romulea rosea,0.5
+23,9,sonchus asper,0.5
+23,9,vulpia bromoides,0.5
+23,9,austrostipa bigeniculata,1
+23,9,BG,20
+23,10,themeda triandra,70
+23,10,avena fatua,0.5
+23,10,elymus scaber,0.5
+23,10,romulea rosea,0.5
+23,10,aira caryophyllea,0.5
+23,10,BG,25
 24,1,themeda triandra,30
 24,1,rytidosperma setaceum,1
 24,1,elymus scaber,0.5
