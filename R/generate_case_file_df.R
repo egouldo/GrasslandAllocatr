@@ -20,7 +20,7 @@ generate_case_file_df <- function(field_data_by_mu){
                                "SowingForbs_WC")
         filter_candidate_action <- function(x) ifelse(x %in% candidate_actions,yes = x,no = NA)
         # Replace any illegal action in Management cols with NA, otherwise, keep.
-        casefile_df %<>% mutate_at(.cols = vars(contains("Management", ignore.case = FALSE)) , .funs = filter_candidate_action) %>% drop_na()
+        casefile_df %<>% mutate_at(.vars = vars(dplyr::contains("Management", ignore.case = FALSE)) , .funs = filter_candidate_action) %>% drop_na()
         # Remove management_unit col, add IDnum col:
         casefile_df %<>%
                 dplyr::select(-management_unit) %>%
