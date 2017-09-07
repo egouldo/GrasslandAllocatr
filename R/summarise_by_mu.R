@@ -50,14 +50,15 @@ summarise_by_mu <- function(field_data_by_transect, year = c(0:5)) {
                 field_data_by_management_unit %>%
                 dplyr::left_join({
                         field_data_by_transect %>%
-                        dplyr::select(management_unit,
-                                      management,
-                                      years_since) %>%
+                                dplyr::select(management_unit,
+                                              management,
+                                              years_since) %>%
+                                dplyr::distinct() %>% #drop multiple entries for single MU
                                 dplyr::rename(Management = management, YearsSince = years_since) %>%
                                 tidyr::gather(variable, value, -management_unit) %>%
                                 dplyr::mutate(year = ifelse(variable == "Management", year - 1, year), year = as.character(year),
                                               year = ifelse(year == 0, "",year),
-                                        time = paste0("t", year)) %>% dplyr::select(-year) %>% dplyr::filter(variable != "Management_t-1") %>%
+                                              time = paste0("t", year)) %>% dplyr::select(-year) %>% dplyr::filter(variable != "Management_t-1") %>%
                                 tidyr::unite(variable, variable, time) %>%
                                 tidyr::spread(variable, value)})
 
