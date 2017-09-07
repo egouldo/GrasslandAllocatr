@@ -24,7 +24,8 @@ summarise_by_mu <- function(field_data_by_transect, year = c(0:5)) {
                 dplyr::mutate(Grassland_Condition = "*")
         # Rename variable names to node names
         year_char <- ifelse(year == 0, "", as.character(year))
-        field_data_by_management_unit %<>%
+        field_data_by_management_unit <-
+        field_data_by_management_unit %>%
                 tidyr::gather(variable, value, -management_unit) %>%
                 dplyr::mutate(variable =
                                       ifelse(variable == "BG_pc",
@@ -45,7 +46,8 @@ summarise_by_mu <- function(field_data_by_transect, year = c(0:5)) {
         # excluding transect_number and measure variables
         # and collapsing management units with multiple entries (transects)
         # into single entries (1 summarised value per management unit)
-        field_data_by_management_unit %<>%
+        field_data_by_management_unit <-
+                field_data_by_management_unit %>%
                 dplyr::left_join({
                         field_data_by_transect %>%
                         dplyr::select(management_unit,
