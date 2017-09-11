@@ -15,7 +15,14 @@ learn_grassland_bbn <- function(path, casefile_path, first_iteration = TRUE, sav
 
         # Select nodes for learning (get them from the casefile)
         cases <- RNetica::read.CaseFile(casefile_path)
+        cat("Casefile from path ", casefile_path, ":", sep = "")
+        print(cases)
         target_nodes <- colnames(cases)
+        cat("Nodes to be updated:")
+        target_nodes[-1] %>%
+                base::Filter(function(x) !any(grepl("Management", x)), .) %>%
+                base::Filter(function(x) !any(grepl("IDnum", x)), .) %>%
+                print()
         # Remove IDnum and any 'Management' nodes:
         target_nodes <- target_nodes[-1] %>% get_node(string_to_match = ., node_names = FALSE, network = grassland_bbn) %>%
                 base::Filter(function(x) !any(grepl("Management", x)), .) %>%
