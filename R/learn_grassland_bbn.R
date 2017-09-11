@@ -7,12 +7,11 @@
 #' @details Note if \code{first_iteration} is set to \code{TRUE}, node experience for target nodes will be set to 1 for every state. Please see Netica or RNetica documentation for information on the EM Learning algorithm.
 #'
 learn_grassland_bbn <- function(path, casefile_path, first_iteration = TRUE, save_path) {
-        RNetica::StopNetica()
-        load_Netica_LicenseKey()
+        #RNetica::StopNetica()
+        #load_Netica_LicenseKey()
 
         grassland_bbn <<- load_compile_grassland_bbn(path)
         ClearAllErrors()
-
 
         # Select nodes for learning (get them from the casefile)
         cases <- RNetica::read.CaseFile(casefile_path)
