@@ -31,6 +31,7 @@ targets:
       - field_data_by_mu_2015
       - field_data_by_mu_2014a
       - casefile_df_2014_2015
+      - processed_data/casefile_2014_2015.cas
 
 
 #  load_learn_process_model:
@@ -88,7 +89,7 @@ targets:
     command: generate_case_file_df(field_data_by_mu_2014a, field_data_by_mu_2015)
 
   field_data_by_mu_2010_2011:
-    command: reshape_pauls_data_all_years(file_path = "./data-raw/field_data_by_transect_2010_2011.csv")
+    command: reshape_pauls_data_all_years(file_path = './data-raw/field_data_by_transect_2010_2011.csv')
 
   casefile_df_2010_2011:
     command:  generate_case_file_df(field_data_by_mu_2010_2011)
@@ -96,6 +97,8 @@ targets:
   processed_data/casefile_2010_2011.cas:
     command: write.CaseFile(casefile_df_2010_2011, file = 'processed_data/casefile_2010_2011.cas')
 
+  processed_data/casefile_2014_2015.cas:
+    command: write.CaseFile(casefile_df_2014_2015, file = 'processed_data/casefile_2014_2015.cas')
 
   # ---------------- Load and Learn Process Model "load_learn_process_model"--------------
 
