@@ -24,14 +24,15 @@ learn_grassland_bbn <- function(path, casefile_path, first_iteration = TRUE, sav
                 base::Filter(function(x) !any(grepl("IDnum", x)), .) %>%
                 print()
         # Remove IDnum and any 'Management' nodes:
-        target_nodes <- target_nodes[-1] %>% get_node(string_to_match = ., node_names = FALSE, network = grassland_bbn) %>%
+        target_nodes <- target_nodes[-1] %>%
+                get_node(string_to_match = .,
+                         node_names = FALSE,
+                         network = grassland_bbn) %>%
                 base::Filter(function(x) !any(grepl("Management", x)), .) %>%
                 base::Filter(function(x) !any(grepl("IDnum", x)), .)
 
         # Set Node Experience to 1 for each state of each node, before learning:
-        if(first_iteration == TRUE){
-                sapply(target_nodes, function(x) RNetica::NodeExperience(x)<-1)
-        }
+        if(first_iteration == TRUE) sapply(target_nodes, function(x) RNetica::NodeExperience(x)<-1)
 
         casefile_stream <- CaseFileStream(casefile_path)
         RNetica::LearnCPTs(nodelist = target_nodes,
