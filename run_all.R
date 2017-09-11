@@ -1,0 +1,5 @@
+library(GrasslandAllocatr)
+library(remake)
+library(RNetica)
+GrasslandAllocatr::start_netica_with_license("./data/LicenseKey")
+remake::make()
