@@ -21,7 +21,7 @@ summarise_by_mu <- function(field_data_by_transect, year = c(0:5)) {
                                  E_pc = mean(E_mean),
                                  E_diversity = mean(E_diversity),
                                  NF_diversity = mean(NF_diversity)) %>%
-                dplyr::mutate(Grassland_Condition = "*")
+                dplyr::mutate(Grassland_Condition = NA)
         # Rename variable names to node names
         year_char <- ifelse(year == 0, "", as.character(year))
         field_data_by_management_unit <-

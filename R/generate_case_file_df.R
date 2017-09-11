@@ -20,8 +20,12 @@ time_slices <- list(...)
                                  "Grazing_WC",
                                  "SowingForbs_WC")
           filter_candidate_action <- function(x) ifelse(x %in% candidate_actions,yes = x,no = NA)
+          replace_missing_code <- function(x) ifelse(is.na(x), "*", x)
           # Replace any illegal action in Management cols with NA, otherwise, keep.
           casefile_df %<>% mutate_at(.vars = vars(dplyr::contains("Management", ignore.case = FALSE)) , .funs = filter_candidate_action) %>% drop_na()
+          # Replace missing code with *
+          casefile_df %<>%
+                  mutate_at(.vars = vars(dplyr::contains("Grassland", ignore.case = FALSE)) , .funs = replace_missing_code)
           # Remove management_unit col, add IDnum col:
           casefile_df %<>%
                   dplyr::select(-management_unit) %>%
@@ -29,18 +33,17 @@ time_slices <- list(...)
           return(casefile_df)
         }
 
-        time_slices <- lapply(X = time_slices, FUN = transform_casefile_protocol)
-
         if(length(time_slices) > 1){
                 casefile_df <-
                         time_slices %>%
-                        purrr::reduce(dplyr::left_join, by = "IDnum")
-                return(casefile_df)
+                        purrr::reduce(dplyr::left_join, by = "management_unit")
         } else{
                 casefile_df <-
                         time_slices %>%
                         purrr::flatten_df(.)
-                return(casefile_df)
         }
+
+        casefile_df <- transform_casefile_protocol(casefile_df)
+
         return(casefile_df)
 }
