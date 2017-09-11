@@ -4,7 +4,7 @@
 \alias{generate_case_file_df}
 \title{Generate Netica Case File as a \code{data_frame}}
 \usage{
-generate_case_file_df(field_data_by_mu)
+generate_case_file_df(...)
 }
 \arguments{
 \item{field_data_by_mu}{Field data that has been summarised by management unit. Must contain the column \code{management_unit}.}
