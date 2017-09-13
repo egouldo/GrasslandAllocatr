@@ -9,7 +9,7 @@
 #'
 compute_mutual_info <- function(target_node, network, year) {
         # generate nodelist (of parent nodes)
-        nodesets <- paste0("tn") %>% paste0(c("", paste(seq(year) %>% .[-length(.)])))
+        nodesets <- append("tn", paste0("tn", seq(year)))
         veg_attribute_nodelist <- nodesets %>%
                 map(., .f = ~NetworkNodesInSet(net = network,setname = .x) %>% .[-1]) %>%
                 reduce(.f = append)
