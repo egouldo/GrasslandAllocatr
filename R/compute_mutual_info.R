@@ -11,10 +11,10 @@ compute_mutual_info <- function(target_node, network, year) {
         # generate nodelist (of parent nodes)
         nodesets <- paste0("tn") %>% paste0(c("", paste(seq(year) %>% .[-length(.)])))
         veg_attribute_nodelist <- nodesets %>%
-                map(., .f = ~NetworkNodesInSet(net = model_1,setname = .x) %>% .[-1]) %>%
+                map(., .f = ~NetworkNodesInSet(net = network,setname = .x) %>% .[-1]) %>%
                 reduce(.f = append)
         mngmnt_nodelist <-
-                NetworkNodesInSet(net = model_1, "mngmnt") %>% rev(.) %>% .[seq(year)]
+                NetworkNodesInSet(net = network, "mngmnt") %>% rev(.) %>% .[seq(year)]
         nodelist <- append(veg_attribute_nodelist, mngmnt_nodelist)
         # calculate mutual info
         mutual_info_df <- MutualInfo(target = target_node, nodelist = nodelist) %>%
