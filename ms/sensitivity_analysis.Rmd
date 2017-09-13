@@ -1,0 +1,47 @@
+---
+title: "Sensitivity Analysis"
+output: html_document
+---
+
+
+```{r load_models}
+library(GrasslandAllocatr)
+library(tidyverse)
+library(RNetica)
+library(ggplot2)
+start_netica_with_license("../data/LicenseKey")
+model_1 <- RNetica::ReadNetworks(paths = "../processed_data/grassland_bbn_learned_1.dne")
+CompileNetwork(model_1)
+ClearAllErrors()
+model_2 <- RNetica::ReadNetworks(paths = "../processed_data/grassland_bbn_learned_2.dne")
+CompileNetwork(model_2)
+ClearAllErrors()
+model_3 <- RNetica::ReadNetworks(paths = "../processed_data/grassland_bbn_learned_3.dne")
+CompileNetwork(model_3)
+ClearAllErrors()
+```
+
+Target (aka query) Nodes for sensitivity analysis:
+
+1. `IndigSpp_transect_t1`
+2. `WeedCover_t1`
+3. `BareGround_t1`
+4. `WeedDiversity_t1`
+5. `GrasslandCondition_t1`
+
+Nodes whose effect on target nodes we are interested in:
+
+```{r plot-sensitivity, dpi=300}
+sensitivity <- data_frame(model = list(model_1, model_2, model_3), names = c("model_1", "model_2", "model_3")) %>%
+        dplyr::mutate(sensitivity_analysis = purrr::map(.x = model, .f = ~ analyse_sensitivity(network = .x, year = 1))) %>%
+        unnest(sensitivity_analysis) %>%
+        rename(model = names)
+
+sensitivity %>%
+        ggplot(., aes(x = nodelist_node_name, y = mutual_info, fill = model)) + 
+        geom_col(position = "dodge") +
+        facet_grid(~node_name) +
+        theme_bw() +
+        theme(axis.text.x=element_text(angle=90,hjust=1))
+```
+
