@@ -17,3 +17,4 @@ raw_field_data_w_species_type The new data frame containing the \code{type}, \co
 \description{
 lookup_species searches for matching species in a species look up table \code{species_lookup_data} for all observed species in the raw field data frame \code{raw_field data} and adds three new columns containing the \code{type}, \code{origin}, and \code{growth_form} of the matched species.
 }
+

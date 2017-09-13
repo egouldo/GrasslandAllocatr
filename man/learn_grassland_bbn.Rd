@@ -22,3 +22,4 @@ Learn \code{grassland_bbn} with EM Learning algorithm
 \details{
 Note if \code{first_iteration} is set to \code{TRUE}, node experience for target nodes will be set to 1 for every state. Please see Netica or RNetica documentation for information on the EM Learning algorithm.
 }
+
