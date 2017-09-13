@@ -27,6 +27,7 @@ targets:
       - processed_data/grassland_bbn_learned_1.dne
       - processed_data/grassland_bbn_learned_2.dne
       - processed_data/grassland_bbn_learned_3.dne
+      - ms/sensitivity_analysis.md
 
   field_data_quadrat_2014:
     command: build_raw_dataset(raw_field_data = "./data-raw/field_data_raw_2014.csv",
@@ -84,4 +85,14 @@ targets:
 
   processed_data/grassland_bbn_learned_3.dne:
     command: learn_grassland_bbn(path = "processed_data/grassland_bbn_learned_1.dne", casefile_path = "processed_data/casefile_2014_2015.cas", save_path = "processed_data/grassland_bbn_learned_3.dne")
+# --------------- Run Analyses -------------------------------------------------
+
+  ms/sensitivity_analysis.md:
+    depends:
+      - processed_data/grassland_bbn_learned_1.dne
+      - processed_data/grassland_bbn_learned_2.dne
+      - processed_data/grassland_bbn_learned_3.dne
+    knitr:
+      chdir: true
+      auto_figure_prefix: true
 
