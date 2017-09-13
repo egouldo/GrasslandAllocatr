@@ -15,4 +15,3 @@ NeticaLicenseKey Returns \code{NeticaLicenseKey} to the parent environment.
 \description{
 The return of \code{NeticaLicenseKey} is not the main outcome of the function, but is simply a precaution to guard against potential calls of \code{library(RNetica)}, whereby RNetica will be started with new license details. Calling \code{library(RNetica)} in the same environment where \code{NeticaLicenseKey} exists will result in Netica using this license.
 }
-

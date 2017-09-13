@@ -15,4 +15,3 @@ field_data_by_transect A data_frame containing a row for each surveyed transect.
 \description{
 Summarise by quadrat data into per transect data with key variables for updating the GrasslandBBN
 }
-
