@@ -27,9 +27,9 @@ targets:
       - processed_data/grassland_bbn_learned_1.dne
       - processed_data/grassland_bbn_learned_2.dne
       - processed_data/grassland_bbn_learned_3.dne
-      - scenario_analysis_1
-      - scenario_analysis_2
-      - scenario_analysis_3
+      - scenario_analysis_prior
+      - scenario_analysis_snapshot
+      - scenario_analysis_posterior
       - ms/sensitivity_analysis.md
       - ms/scenario_analysis.md
 
@@ -91,20 +91,20 @@ targets:
     command: learn_grassland_bbn(path = "processed_data/grassland_bbn_learned_1.dne", casefile_path = "processed_data/casefile_2014_2015.cas", save_path = "processed_data/grassland_bbn_learned_3.dne")
 # --------------- Run Analyses -------------------------------------------------
 
-  scenario_analysis_1:
+  scenario_analysis_prior:
     command: predict_grassland_condition(network_path = "processed_data/grassland_bbn_learned_1.dne",strategies_casefile = "processed_data/management_strategies.cas", sites_casefile = "processed_data/generate-cases.cas")
 
-  scenario_analysis_2:
+  scenario_analysis_snapshot:
     command: predict_grassland_condition(network_path = "processed_data/grassland_bbn_learned_2.dne",strategies_casefile = "processed_data/management_strategies.cas", sites_casefile = "processed_data/generate-cases.cas")
 
-  scenario_analysis_3:
+  scenario_analysis_posterior:
     command: predict_grassland_condition(network_path = "processed_data/grassland_bbn_learned_3.dne",strategies_casefile = "processed_data/management_strategies.cas", sites_casefile = "processed_data/generate-cases.cas")
 
   ms/scenario_analysis.md:
     depends:
-      - scenario_analysis_1
-      - scenario_analysis_2
-      - scenario_analysis_3
+      - scenario_analysis_prior
+      - scenario_analysis_snapshot
+      - scenario_analysis_posterior
     knitr:
       chdir: true
       auto_figure_prefix: true
