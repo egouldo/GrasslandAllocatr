@@ -33,24 +33,24 @@ predict_grassland_condition <- function(network_path = character, strategies_cas
         CompileNetwork(process_model)
         ClearAllErrors()
 
-        management_nodes <- get_node(string_to_match = "Management_t", network = process_model)
+        management_nodes <<- get_node(string_to_match = "Management_t", network = process_model)
         management_nodes <- management_nodes %>% .[1:time_slice]
         lapply(management_nodes, `NodeSets<-`, value = "management" )
 
-        condition_nodes <- get_node(string_to_match = "Condition_t", network = process_model)
+        condition_nodes <<- get_node(string_to_match = "Condition_t", network = process_model)
         condition_nodes <- condition_nodes %>% .[1:time_slice]
         lapply(condition_nodes, `NodeSets<-`, value = "condition" )
 
-        starting_condition_nodes <- c("IndigSpp_transect_t", "WeedCover_t", "BareGround_t", "WeedDiversity_t")
+        starting_condition_nodes <<- c("IndigSpp_transect_t", "WeedCover_t", "BareGround_t", "WeedDiversity_t")
         starting_condition_nodes <- starting_condition_nodes %>%
                 sapply(., function(x) get_node(string_to_match = x, network = process_model)[1])
 
         ## load casefiles and open memory streams
-        strategies_casestream <- CaseFileStream(strategies_casefile)
+        strategies_casestream <<- CaseFileStream(strategies_casefile)
         stopifnot(isCaseStreamOpen(strategies_casestream))
         stopifnot(getCaseStreamPath(strategies_casestream) == strategies_casefile)
 
-        sites_casestream <- CaseFileStream(sites_casefile)
+        sites_casestream <<- CaseFileStream(sites_casefile)
         stopifnot(isCaseStreamOpen(sites_casestream))
         stopifnot(getCaseStreamPath(sites_casestream) == sites_casefile)
 
