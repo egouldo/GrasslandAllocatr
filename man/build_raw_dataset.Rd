@@ -23,3 +23,4 @@ Build raw field data set complete with species type and management history data
 \details{
 This is an internal function for building the paper vignette with the Remake package
 }
+

@@ -20,3 +20,4 @@ Summarise field data by transect over each management unit
 \details{
 Please ensure the following rows are supplied: \code{management_unit}, \code{BG_mean}, \code{E_mean}, \code{E_diversity}, \code{NF_diversity}, \code{management}, \code{years_since}. Note that if you are providing observations for Management period t0, the column \code{management} is still required. You can fill this character variable with \code{NA}, the function will remove it as necessary since there is no \code{t0} \code{management} period.
 }
+

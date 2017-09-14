@@ -24,3 +24,4 @@ Extract active nodes using partial matches:
 \details{
 Note that because this function returns a list when \code{node_names = FALSE}, this function can handle \code{string_to_match} vectors of length greater than 1, such that if you supply a multi-element vector, a list will be returned. Note that this function no longer supports partial matches at the moment due to an error with the function returning multiple concatenated matches when a partial match is found for more than one node.
 }
+
