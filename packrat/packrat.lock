@@ -207,9 +207,9 @@ Hash: 951e83029bb5f798b53d7b53cbc50be9
 
 Package: ggplot2
 Source: CRAN
-Version: 2.1.0
-Hash: 50e297b0191179c39c7dcae0eff72b51
-Requires: digest, gtable, plyr, reshape2, scales
+Version: 2.2.1
+Hash: 46e5cb78836848aa44655e577433f54b
+Requires: digest, gtable, lazyeval, plyr, reshape2, scales, tibble
 
 Package: ggvis
 Source: CRAN
@@ -490,9 +490,10 @@ Requires: httr, magrittr, selectr, xml2
 
 Package: scales
 Source: CRAN
-Version: 0.4.0
-Hash: 99ca163a301d7c1d959424a2cccdcacd
-Requires: RColorBrewer, Rcpp, dichromat, labeling, munsell, plyr
+Version: 0.5.0
+Hash: 3cfd302a09c4fbfdfd3f8e10f7145b7b
+Requires: R6, RColorBrewer, Rcpp, dichromat, labeling, munsell, plyr,
+    viridisLite
 
 Package: selectr
 Source: CRAN
@@ -546,6 +547,11 @@ Hash: 7adbfd73ba78f6c97f54e45df607850a
 Requires: DBI, broom, dplyr, forcats, ggplot2, haven, hms, httr,
     jsonlite, lubridate, magrittr, modelr, purrr, readr, readxl, rvest,
     stringr, tibble, tidyr, xml2
+
+Package: viridisLite
+Source: CRAN
+Version: 0.2.0
+Hash: 10f0c25af3dc84eaae10f5854f47efdb
 
 Package: visNetwork
 Source: CRAN
