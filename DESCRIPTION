@@ -18,7 +18,7 @@ Imports:
     magrittr,
     purrr,
     readr,
-    RNetica,
     rprojroot,
     stringr,
     tidyr
+Remotes: svn::https://pluto.coe.fsu.edu/svn/common/RNetica/
