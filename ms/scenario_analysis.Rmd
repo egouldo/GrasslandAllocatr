@@ -1,0 +1,57 @@
+---
+title: "Scenario Analysis"
+author: "Elise Gould"
+date: "14/09/2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r load-libs-models}
+library(GrasslandAllocatr)
+library(tidyverse)
+library(ggplot2)
+# library(RNetica)
+# start_netica_with_license("../data/LicenseKey")
+```
+
+## Management Scenarios
+
+For a given model, for 3 different sites, we wish to simulate grassland condition under various scenarios of management.
+
+Below is a selection of management strategies, a set of actions to be applied at three time-steps, to each of the models.
+Strategy $S_1$ represents a baseline scenario to compare the effects of management against. Strategy $S_2$ represents a sort of 'bare minimum' management strategy, so that means no biomass removal, but some form of weed control. The remaining strategies have at least one form of biomass removal over the three years, in the form of burning or grazing ($S_6$). There are three strategies with Fire as an action: $S_3$ with a single burn in the first year, $S_4$ with 2 burns, in the first and third year, and $S_5$ with a burn in the first year, and follow-up oversowing with forbs in the second year.
+
+```{r management-strategies}
+strategies <- 
+        data_frame(Strategy = paste0("S", 1:6), 
+                   Management = list(rep("No_Management",times = 3), 
+                                     rep("WC", times = 3),
+                                     c("Fire_WC", "WC", "WC"), 
+                                     c("Fire_WC", "WC", "Fire_WC"), 
+                                     c("Fire_WC", "SowingForbs_WC", "WC"), 
+                                     c("Grazing_WC", "WC", "WC")), 
+                   year = list(c("Management_t", "Management_t1", "Management_t2"))) %>% 
+        unnest() %>% 
+        spread(key = year, value = Management)
+print(strategies)
+```
+
+## Sites
+
+I have selected 3 sites 
+
+## Access Simultion Results
+
+```{r simulation-results}
+scenario_analysis_1
+scenario_analysis_2
+scenario_analysis_3
+```
+
+
+
+
+
