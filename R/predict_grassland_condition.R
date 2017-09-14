@@ -25,7 +25,7 @@ predict_grassland_condition <- function(network_path = character, strategies_cas
         }
 
         ## Initialise Simulation
-        time_horizon <- ncol(read.CaseFile(strategies_casefile))
+        time_horizon <- ncol(read.CaseFile(strategies_casefile)) - 1 #remove IDnum col
         time_slice <- time_horizon + 1 # to align intended time_horizon with the time_slices as indexed by R
 
         # Initialise network and input, and output nodes
