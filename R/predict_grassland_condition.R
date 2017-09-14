@@ -54,39 +54,6 @@ predict_grassland_condition <- function(network_path = character, strategies_cas
         stopifnot(isCaseStreamOpen(sites_casestream))
         stopifnot(getCaseStreamPath(sites_casestream) == sites_casefile)
 
-        ## Define functions for:
-        # initialising condition at t0 and recording condition at t0
-        initialise_condition <- function(attribute_nodes, unit) {
-                position <- ifelse(unit == 1, "FIRST", "NEXT")
-                sites_findings_casestream <<- ReadFindings(nodes = attribute_nodes,
-                                                           stream = sites_casestream ,
-                                                           pos = position,
-                                                           add = FALSE)
-                beliefs_t0 <- RNetica::NodeBeliefs(condition_nodes[[1]])
-                return(beliefs_t0)
-        }
-        # Applying management actions (as findings), recording condition at t0
-        act_predict <- function(action_set, nodes){
-                position <- ifelse(action_set == 1, "FIRST", "NEXT")
-                management_findings_casestream <<- ReadFindings(nodes,
-                                                                stream = strategies_casestream,
-                                                                pos = position,
-                                                                add = FALSE)
-                beliefs_time_horizon <- RNetica::NodeBeliefs(condition_nodes[[time_slice]])
-                return(beliefs_time_horizon)
-        }
-        # Applying the above functions and recording outputs in a dataframe
-        apply_act_predict <- function(strategies_df){
-                strategies_df <- strategies_df %>%
-                        dplyr::as_tibble() %>%
-                        dplyr::rename(action_set_number = value)
-                strategies_df <- strategies_df %>%
-                        dplyr::mutate(condition_horizon = purrr::map(.x = action_set_number,
-                                                                     .f = act_predict,
-                                                                     nodes = management_nodes))
-                return(strategies_df)
-        }
-
         ## Run the simulation
         # Create data_frame for capturing output
         simulations_df <- data_frame(management_unit = c(1:nrow(read.CaseFile(sites_casefile))),
