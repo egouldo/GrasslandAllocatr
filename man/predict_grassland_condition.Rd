@@ -23,4 +23,3 @@ Enters Findings from monitoring data for 1 or more sites, and records Grassland 
 \details{
 Note that a /code{management_strategy} consists of one or more management actions defined as node states for each management node in the model. These actions are applied sequentially through time.
 }
-
