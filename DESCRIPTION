@@ -20,5 +20,6 @@ Imports:
     readr,
     rprojroot,
     stringr,
-    tidyr
-Remotes: svn::https://pluto.coe.fsu.edu/svn/common/RNetica/
+    tidyr,
+    RNetica
+Remotes: url::https://pluto.coe.fsu.edu/svn/common/RNetica/releases/RNetica_0.4-6.tgz
