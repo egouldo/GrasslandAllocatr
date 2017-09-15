@@ -10,6 +10,7 @@
 #' @import RNetica
 #' @import dplyr
 #' @import purrr
+#' @importFrom stats setNames
 #'
 #' @details Note that a /code{management_strategy} consists of one or more management actions defined as node states for each management node in the model. These actions are applied sequentially through time.
 predict_grassland_condition <- function(network_path = character, strategies_casefile = character,sites_casefile = character) {
