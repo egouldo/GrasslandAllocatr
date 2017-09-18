@@ -13,7 +13,8 @@ cache:
   directories:
     - ~/Rlib
 before_install:
-  - ./install-RNetica.sh
+  - chmod +x install-RNetica.sh
 install:
+  - ./install-RNetica.sh
   - Rscript -e 'install.packages(c("devtools", "knitr", "dplyr", "purrr", "readr", "rprojroot", "tidyr", "rmarkdown"))'
 
