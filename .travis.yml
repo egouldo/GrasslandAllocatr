@@ -13,9 +13,6 @@ cache:
   directories:
     - ~/Rlib
 install:
-  - wget https://pluto.coe.fsu.edu/svn/common/RNetica/releases/RNetica_0.4-6.tgz -O 'RNetica_0.4-6.tgz'
-  - tar -xvf 'RNetica_0.4-6.tgz'
-  - pwd
-  - pushd RNetica && R CMD INSTALL RNetica --configure-args='--with-netica=/home/travis/build/egouldo/GrasslandAllocatr/src/Netica_API_504' && popd
+  - ./install-RNetica.sh
   - Rscript -e 'install.packages(c("devtools", "knitr", "dplyr", "purrr", "readr", "rprojroot", "tidyr", "rmarkdown"))'
 
