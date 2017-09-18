@@ -12,5 +12,5 @@ cache:
   directories:
     - ~/Rlib
 install:
-  - Rscript -e 'install.packages("devtools")'
+  - Rscript -e 'install.packages(c("devtools", "knitr"))'
   - Rscript -e 'devtools::install_url("https://pluto.coe.fsu.edu/svn/common/RNetica/releases/RNetica_0.4-6.tgz")'
