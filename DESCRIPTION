@@ -22,4 +22,3 @@ Imports:
     stringr,
     tidyr,
     RNetica
-Remotes: local::src/RNetica/
