@@ -8,3 +8,7 @@ sudo: false
 cache:
   packages: true
 warnings_are_errors: false
+addons:
+  apt:
+    packages:
+      - r-local-RNetica
