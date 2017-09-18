@@ -22,3 +22,4 @@ Compute Mutual Information
 \details{
 Mutual Information is computed for the target node, and calculates the mutual information of vegetation measure and management nodes in the same time slice as the target node, as well nodes in preceding time slices.
 }
+

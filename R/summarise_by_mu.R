@@ -7,7 +7,6 @@
 #' @return field_data_by_management_unit \code{data_frame} containing all the variables needed for updating the GrasslandBBN with a Netica Case File.
 #' @export
 #' @import dplyr
-#' @importFrom magrittr %<>%
 #'
 #' @details Please ensure the following rows are supplied: \code{management_unit}, \code{BG_mean}, \code{E_mean}, \code{E_diversity}, \code{NF_diversity}, \code{management}, \code{years_since}. Note that if you are providing observations for Management period t0, the column \code{management} is still required. You can fill this character variable with \code{NA}, the function will remove it as necessary since there is no \code{t0} \code{management} period.
 #'

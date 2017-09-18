@@ -15,3 +15,4 @@ grassland_bbn the R object of network in NeticaAPI memory.
 \description{
 Loads Netica network into R and NeticaAPI memory and compiles network
 }
+

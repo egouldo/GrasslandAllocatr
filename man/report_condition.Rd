@@ -17,3 +17,4 @@ A data frame with the columns management unit and Grassland Condition_t0
 \description{
 Reports Grassland Condition at t0 for a casefile of sites.
 }
+

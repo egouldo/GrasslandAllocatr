@@ -6,7 +6,7 @@
 #' @param management_lookup_data_path Path to the CSV file containing the management lookup data, see \code{\link{lookup_management}}.
 #'
 #' @return field_data_by_quadrat This is the complete field dataset in raw form containing both management history for each transect, as well as the type code for each species (i.e. row in the dataset).
-#' @importFrom readr read_csv
+#' @import readr
 #' @export
 #'
 build_raw_dataset <- function(raw_field_data_path,species_lookup_data_path,management_lookup_data_path) {

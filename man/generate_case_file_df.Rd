@@ -15,3 +15,4 @@ casefile_df A dataframe of the same dimensions as \code{field_data_by_mu}, but w
 \description{
 Generate Netica Case File as a \code{data_frame}
 }
+

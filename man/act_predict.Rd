@@ -7,8 +7,14 @@
 act_predict(action_set, nodes)
 }
 \arguments{
-\item{nodes}{}
+\item{action_set}{A series of actions through time}
+
+\item{nodes}{The nodes for which findings will be entered}
+}
+\value{
+The beliefs at the end of the specified /code{time_horizon}
 }
 \description{
 helper function for simulatin grassland condition under management
 }
+

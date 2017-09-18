@@ -5,7 +5,7 @@
 #' @param species_lookup_data A data_frame containing a key column of species names in the format and associated value columns: \code{type}, \code{origin}, and \code{growth_form} of the matched species. The full list of species observed during a whole season's field work should be present in the \code{species} column.
 #'
 #' @return raw_field_data_w_species_type The new data frame containing the \code{type}, \code{origin}, and \code{growth_form} of the matched species.
-#' @importFrom dplyr left_join
+#' @import dplyr
 #' @export
 #'
 lookup_species <- function(raw_field_data, species_lookup_data) {

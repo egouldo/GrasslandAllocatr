@@ -1,9 +1,10 @@
 #' Apply management actions as Netica Findings
 #' @description helper function for simulatin grassland condition under management
-#' @param action_set
-#' @param nodes
+#' @param action_set A series of actions through time
+#' @param nodes The nodes for which findings will be entered
+#' @import RNetica
 #'
-#' @return
+#' @return The beliefs at the end of the specified /code{time_horizon}
 #' @export
 act_predict <- function(action_set, nodes){
         position <- ifelse(action_set == 1, "FIRST", "NEXT")

@@ -7,7 +7,6 @@
 #' @export
 #' @import dplyr
 #' @import tidyr
-#' @importFrom magrittr %>%
 #'
 summarise_by_transect <- function(field_data_by_quadrat) {
         # Get percent_cover variables

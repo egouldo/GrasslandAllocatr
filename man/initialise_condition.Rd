@@ -7,8 +7,14 @@
 initialise_condition(attribute_nodes, unit)
 }
 \arguments{
-\item{unit}{}
+\item{attribute_nodes}{The grassland condition attribute nodes to be initialised with values from monitoring data}
+
+\item{unit}{the management unit to be simulated. This controls the iterative reading and predicting of findings in the netica function ReadFindings}
+}
+\value{
+/code{beliefs_t0} the beliefs for Grassland Condition at t0
 }
 \description{
 helper function for simulating grassland condition under management
 }
+

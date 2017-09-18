@@ -6,8 +6,7 @@
 #' @return raw_field_data_w_management The new data frame containing raw field data plus additional matched columns in \code{management_lookup_data}.
 #' @export
 #'
-#' @importFrom dplyr mutate
-#' @importFrom dplyr left_join
+#' @import dplyr
 #'
 lookup_management <- function(raw_field_data, management_lookup_data) {
         # Live Vegetation
@@ -15,7 +14,8 @@ lookup_management <- function(raw_field_data, management_lookup_data) {
                 raw_field_data %>%
                 dplyr::left_join(.,management_lookup_data, by = "transect_number")
         # Non-Vegetation: Litter and Bare Ground, Lichen and Moss, Rock
-        raw_field_data_w_management %<>%
+        raw_field_data_w_management <-
+        raw_field_data_w_management %>%
                 dplyr::mutate(type = ifelse(species == "BG", "BG", type)) %>%
                 dplyr::mutate(type = ifelse(species == "L", "L", type)) %>%
                 dplyr::mutate(type = ifelse(species == "LM", "LM", type)) %>%
