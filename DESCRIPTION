@@ -22,4 +22,4 @@ Imports:
     stringr,
     tidyr,
     RNetica
-Remotes: local::inst/RNetica_04-4.tar.gz
+Remotes: svn::https://pluto.coe.fsu.edu/svn/common/RNetica/releases/RNetica_0.4-6.tgz
