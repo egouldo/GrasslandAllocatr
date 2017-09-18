@@ -7,5 +7,5 @@ language: R
 sudo: false
 dist: trusty
 cache:
-  packages: true
+  packages: false
 warnings_are_errors: false
