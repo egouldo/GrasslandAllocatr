@@ -16,5 +16,6 @@ before_install:
   - chmod +x install-RNetica.sh
 install:
   - ./install-RNetica.sh
+  - sudo find / -name 'RNetica.so*'
   - Rscript -e 'install.packages(c("devtools", "knitr", "dplyr", "purrr", "readr", "rprojroot", "tidyr", "rmarkdown"))'
 
