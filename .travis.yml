@@ -16,8 +16,6 @@ install:
   - wget https://pluto.coe.fsu.edu/svn/common/RNetica/releases/RNetica_0.4-6.tgz -O '/tmp/RNetica_0.4-6.tgz'
   - tar -xvf '/tmp/RNetica_0.4-6.tgz'
   - pwd
-  - cd /tmp/RNetica/
-  - R CMD install RNetica --configure-args='--with-netica=/home/travis/build/egouldo/GrasslandAllocatr/src/Netica_API_504'
-  - cd -
+  - pushd RNetica && R CMD install RNetica --configure-args='--with-netica=/home/travis/build/egouldo/GrasslandAllocatr/src/Netica_API_504' && popd
   - Rscript -e 'install.packages(c("devtools", "knitr", "dplyr", "purrr", "readr", "rprojroot", "tidyr", "rmarkdown"))'
 
