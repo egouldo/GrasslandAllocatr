@@ -8,7 +8,7 @@ Maintainer: Who to complain to <elisebgould@gmail.com>
 Description: Allocate management actions among a suite of grasslands.
 License: MIT + file LICENSE
 LazyData: TRUE
-RoxygenNote: 6.0.1
+RoxygenNote: 5.0.1
 Suggests:
     knitr,
     rmarkdown
@@ -22,4 +22,4 @@ Imports:
     stringr,
     tidyr,
     RNetica
-Remotes: url::https://pluto.coe.fsu.edu/svn/common/RNetica/releases/RNetica_0.4-6.tgz
+Remotes: local::inst/RNetica_04-4.tar.gz
