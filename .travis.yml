@@ -3,9 +3,8 @@
 #directories: $TRAVIS_BUILD_DIR/packrat/
 #install:
 #  - R -e "0" --args --bootstrap-packrat
+sudo: false
 language: R
-sudo: required
-dist: trusty
 cache:
   packages: true
 warnings_are_errors: false
@@ -13,7 +12,8 @@ r_check_args: "--no-vignettes"
 cache:
   directories:
     - ~/Rlib
-install:
+before_install:
   - ./install-RNetica.sh
+install:
   - Rscript -e 'install.packages(c("devtools", "knitr", "dplyr", "purrr", "readr", "rprojroot", "tidyr", "rmarkdown"))'
 
