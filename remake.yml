@@ -10,7 +10,7 @@ sources:
 targets:
   all:
     depends:
-      - field_data_quadrat_2014
+      - field_data_by_quadrat_2014
       - field_data_transect_2014
       - field_data_mu_2014
       - casefile_df_2014
@@ -33,13 +33,13 @@ targets:
       - ms/sensitivity_analysis.md
       - ms/scenario_analysis.md
 
-  field_data_quadrat_2014:
+  field_data_by_quadrat_2014:
     command: build_raw_dataset(raw_field_data = "data-raw/field_data_raw_2014.csv",
                   species_lookup_data = "data-raw/species_lookup_table.csv",
                   management_lookup_data = "data-raw/field_site_management_2014.csv")
 
   field_data_transect_2014:
-        command: summarise_by_transect(field_data_quadrat_2014)
+        command: summarise_by_transect(field_data_by_quadrat_2014)
 
   field_data_mu_2014:
         command: summarise_by_mu(field_data_by_transect = field_data_transect_2014, year = 1)
