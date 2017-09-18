@@ -4,7 +4,8 @@
 #install:
 #  - R -e "0" --args --bootstrap-packrat
 language: R
-sudo: false
+sudo: required
+dist: trusty
 cache:
   packages: true
 warnings_are_errors: false
