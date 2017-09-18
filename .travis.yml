@@ -6,8 +6,7 @@
 language: R
 sudo: false
 dist: trusty
-cache:
-  packages: false
+cache: packages
 warnings_are_errors: false
 install:
   - wget https://pluto.coe.fsu.edu/svn/common/RNetica/releases/RNetica_0.4-6.tgz
