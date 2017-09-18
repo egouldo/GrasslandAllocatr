@@ -8,9 +8,13 @@ sudo: false
 cache:
   packages: true
 warnings_are_errors: false
+r_check_args: "--no-vignettes"1
 cache:
   directories:
     - ~/Rlib
+before_install:
+  - cd /home/travis/build/egouldo/GrasslandAllocatr/src/
+  - R CMD install RNetica --configure-args='--with-netica=/home/travis/build/egouldo/GrasslandAllocatr/src/Netica_API_504'
+  - cd ~
 install:
   - Rscript -e 'install.packages(c("devtools", "knitr", "dplyr", "purrr", "readr", "rprojroot", "tidyr", "rmarkdown"))'
-  - Rscript -e 'devtools::install_url("https://pluto.coe.fsu.edu/svn/common/RNetica/releases/RNetica_0.4-6.tgz")'
