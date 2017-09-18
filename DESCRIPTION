@@ -14,10 +14,9 @@ Suggests:
     rmarkdown
 Imports:
     dplyr,
-    magrittr,
     purrr,
     readr,
     rprojroot,
     stringr,
-    tidyr,
-    RNetica
+    tidyr
+Depends: RNetica
