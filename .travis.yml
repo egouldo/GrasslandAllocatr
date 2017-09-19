@@ -5,12 +5,13 @@
 #  - R -e "0" --args --bootstrap-packrat
 language: R
 sudo: false
-dist: trusty
 cache: packages
-warnings_are_errors: false
+before_install:
+  - chmod +x install-NeticaAPI.sh
+  - chmod +x install-RNetica.sh
 install:
-  - wget https://pluto.coe.fsu.edu/svn/common/RNetica/releases/RNetica_0.4-6.tgz
-  - tar -xvf 'RNetica_0.4-6.tgz'
-  - R CMD INSTALL RNetica
+  - ./install-NeticaAPI.sh
+  - ./install-RNetica.sh
   - Rscript -e 'install.packages(c("devtools", "knitr", "dplyr", "purrr", "readr", "rprojroot", "tidyr", "rmarkdown"))'
+warnings_are_errors: false
 r_check_args: "--no-vignettes"
