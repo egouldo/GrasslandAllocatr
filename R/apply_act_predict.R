@@ -7,13 +7,13 @@
 #' @export
 #' @import purrr
 #' @import dplyr
-apply_act_predict <- function(strategies_df){
+apply_act_predict <- function(strategies_df, time_slice){
         strategies_df <- strategies_df %>%
                 dplyr::as_tibble() %>%
                 dplyr::rename(action_set_number = value)
         strategies_df <- strategies_df %>%
                 dplyr::mutate(condition_horizon = purrr::map(.x = action_set_number,
                                                              .f = act_predict,
-                                                             nodes = management_nodes))
+                                                             nodes = management_nodes, time_slice = time_slice))
         return(strategies_df)
 }

@@ -6,7 +6,7 @@
 #'
 #' @return The beliefs at the end of the specified /code{time_horizon}
 #' @export
-act_predict <- function(action_set, nodes){
+act_predict <- function(action_set, nodes, time_slice){
         position <- ifelse(action_set == 1, "FIRST", "NEXT")
         management_findings_casestream <<- ReadFindings(nodes,
                                                         stream = strategies_casestream,

@@ -67,7 +67,7 @@ predict_grassland_condition <- function(network_path = character, strategies_cas
                                       purrr::map2(.x = attr_nodes, .y = management_unit, .f = initialise_condition),
                               condition_horizon = purrr::map(.x = condition_horizon, .f = dplyr::as_tibble),
                               condition_horizon = purrr::map(.x = condition_horizon,
-                                                             .f = apply_act_predict)) %>%
+                                                             .f = apply_act_predict, time_slice = time_slice)) %>%
                 dplyr::mutate(condition_horizon =
                                       purrr::map(.x = condition_horizon,
                                                  .f = ~ dplyr::rename_(.data = .x, .dots = setNames("condition_horizon", paste0("GrasslandCondition_t", time_horizon))))) %>%
