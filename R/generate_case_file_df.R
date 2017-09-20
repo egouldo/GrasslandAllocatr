@@ -21,10 +21,10 @@ time_slices <- list(...)
           filter_candidate_action <- function(x) ifelse(x %in% candidate_actions,yes = x,no = NA)
           replace_missing_code <- function(x) ifelse(is.na(x), "*", x)
           # Replace any illegal action in Management cols with NA, otherwise, keep.
-          casefile_df <- casefile_df %>% mutate_at(.vars = vars(dplyr::contains("Management", ignore.case = FALSE)) , .funs = filter_candidate_action) %>% drop_na()
+          casefile_df <- casefile_df %>% mutate_at(.vars = vars(dplyr::contains("Management", ignore.case = FALSE)) , .funs = filter_candidate_action) %>% drop_na(-dplyr::contains("Grassland_Condition"))
           # Replace missing code with *
           casefile_df <- casefile_df %>%
-                  mutate_at(.vars = vars(dplyr::contains("Grassland", ignore.case = FALSE)) , .funs = replace_missing_code)
+                  mutate_at(.vars = vars(dplyr::contains("Grassland", ignore.case = FALSE)), .funs = replace_missing_code)
           # Remove management_unit col, add IDnum col:
           casefile_df <- casefile_df %>%
                   dplyr::select(-management_unit) %>%
