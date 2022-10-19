@@ -1,6 +1,6 @@
 ---
 title: "Scenario Analysis"
-author: "Elise Gould"
+author: "Elliot Gould"
 date: "14/09/2017"
 output: html_document
 ---

@@ -2,16 +2,17 @@ Package: GrasslandAllocatr
 Type: Package
 Title: Allocate management actions among a suite grasslands
 Version: 0.0.9016
-Author: person(c("Elise", "Bethany"), "Gould", email = "elisebgould@gmail.com",
+Author: person("Elliot", "Gould", email = "elliot.gould@unimelb.edu.au",
     role = c("aut", "cre"))
-Maintainer: Who to complain to <elisebgould@gmail.com>
+Maintainer: Who to complain to <elliot.gould@unimelb.edu.au>
 Description: Allocate management actions among a suite of grasslands.
 License: MIT + file LICENSE
 LazyData: TRUE
 RoxygenNote: 5.0.1
 Suggests:
     knitr,
-    rmarkdown
+    rmarkdown,
+    RNetica
 Imports:
     dplyr,
     purrr,
@@ -19,4 +20,3 @@ Imports:
     rprojroot,
     stringr,
     tidyr
-Depends: RNetica
