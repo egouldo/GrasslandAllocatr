@@ -1,11 +1,11 @@
 # GrasslandAllocatr: *An R package for allocating a schedule of management actions among a suite of grasslands.*
 
-This package is based on the work of Paul Rees and Elise Gould, in partial fulfilment of their Master of Science degreees at the School of Botany (now School of BioSciences), University of Melbourne. Please note that this package is still in active development.
+This package is based on the work of Paul Rees and Elliot Gould, in partial fulfilment of their Master of Science degreees at the School of Botany (now School of BioSciences), University of Melbourne. Please note that this package is still in active development.
 
 The package is built around two models:
 
-1. `GrasslandBBN`: A Bayesian Belief Network model predicting condition for a single grassland in response to management at annual time-steps over a period of 5 years. The original model was built by Paul Rees, and has been parameterised with data collectd by both Paul Rees and Elise Gould.
-2. `GrasslandAllocatr`: A decision model for allocating actions through time among a suite of grasslands. This model uses the predictions of the `GrasslandBBN` and a choice of algorithm and performance metrics for optimally allocating effort under a limited budget. This model is the work of Elise Gould.
+1. `GrasslandBBN`: A Bayesian Belief Network model predicting condition for a single grassland in response to management at annual time-steps over a period of 5 years. The original model was built by Paul Rees, and has been parameterised with data collectd by both Paul Rees and Elliot Gould.
+2. `GrasslandAllocatr`: A decision model for allocating actions through time among a suite of grasslands. This model uses the predictions of the `GrasslandBBN` and a choice of algorithm and performance metrics for optimally allocating effort under a limited budget. This model is the work of Elliot Gould.
 
 # To install this package (for using on your own data):
 
@@ -13,7 +13,7 @@ Install the package using `devtools`: `devtools::install_github("egouldo/Grassla
 
 If you don't have devtools installed, install it like so: `install.packages("devtools")`
 
-# To reproduce the analysis using Paul Rees' and Elise Gould's data:
+# To reproduce the analysis using Paul Rees' and Elliot Gould's data:
 
 Download and build the package:
 
@@ -29,7 +29,7 @@ Install reproduce using the `remake` package [remake on Github](https://github.c
 
 ### Licensing and Build Status:
 
-The software and content in this repository is copyright of Elise Gould, Libby Rumpff, and Peter Vesk. Please cite this work, as follows:
+The software and content in this repository is copyright of Elliot Gould, Libby Rumpff, and Peter Vesk. Please cite this work, as follows:
 
 Gould, E., Rumpff, L. Vesk, P. (2016 in prep.) Managing Grasslands with Models: Resolving uncertainty and allocating effort among a suite of sites.
 
