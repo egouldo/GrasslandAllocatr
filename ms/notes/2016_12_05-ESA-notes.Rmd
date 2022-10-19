@@ -1,6 +1,6 @@
 ---
 title: "ESA notes and follow-ups"
-author: "Elise Gould"
+author: "Elliot Gould"
 date: "05/12/2016"
 output: github_document
 ---
